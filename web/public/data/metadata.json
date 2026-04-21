@@ -5,9 +5,9 @@
   },
   "boundary_status": "official-pre-reform",
   "boundary_note": "Kortet bruger den brugerleverede pre-reform Randers kommunegraense.",
-  "eligible_stop_count": 315,
+  "eligible_stop_count": 303,
   "included_route_count": 15,
   "play_window": "09:00-18:00 normal lordag",
-  "eligibility_rule": "Stop er gyldigt hvis stop inden for 500 meter tilsammen har mindst 18 bushaendelser i spilvinduet, og stoppet selv har mindst en direkte bushaendelse i hver time fra 09 til 17.",
+  "eligibility_rule": "Stop er gyldigt hvis stop inden for 500 meter tilsammen har mindst 30 bushaendelser i spilvinduet, og stoppet selv har mindst en direkte bushaendelse i hver time fra 09 til 17.",
   "nearby_radius_meters": 500
 }

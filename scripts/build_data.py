@@ -23,6 +23,7 @@ from hide_and_seek.geometry import (
     RANDERS_CENTER,
 )
 from hide_and_seek.rules import (
+    MIN_TOTAL_EVENTS,
     has_consecutive_eligible_stops,
     is_stop_eligible,
     is_time_in_window,
@@ -312,7 +313,7 @@ def build_transit_dataset(
         "eligible_stop_count": len(stop_features),
         "included_route_count": len(route_features),
         "play_window": "09:00-18:00 normal lordag",
-        "eligibility_rule": "Stop er gyldigt hvis stop inden for 500 meter tilsammen har mindst 18 bushaendelser i spilvinduet, og stoppet selv har mindst en direkte bushaendelse i hver time fra 09 til 17.",
+        "eligibility_rule": f"Stop er gyldigt hvis stop inden for 500 meter tilsammen har mindst {MIN_TOTAL_EVENTS} bushaendelser i spilvinduet, og stoppet selv har mindst en direkte bushaendelse i hver time fra 09 til 17.",
         "nearby_radius_meters": NEARBY_RADIUS_METERS,
     }
 

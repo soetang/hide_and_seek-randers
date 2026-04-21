@@ -13,9 +13,10 @@ def test_time_window_accepts_game_hours() -> None:
 
 
 def test_stop_eligibility_uses_total_threshold() -> None:
-    assert is_stop_eligible(18)
-    assert is_stop_eligible(20)
-    assert not is_stop_eligible(17)
+    assert is_stop_eligible(30)
+    assert is_stop_eligible(31)
+    assert not is_stop_eligible(20)
+    assert not is_stop_eligible(29)
 
 
 def test_route_needs_consecutive_eligible_stops() -> None:
