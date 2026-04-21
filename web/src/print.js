@@ -1,8 +1,10 @@
 import './style.css'
-import { addBoundary, addRoutes, addStops, createBaseMap, fitAll, loadBaseData, routeColor } from './shared.js'
+import { addBoundary, addOutsideMask, addRoutes, addStops, createBaseMap, fitBoundsWithPadding, loadBaseData, routeColor } from './shared.js'
 
 const map = createBaseMap('print-map', {
   zoomControl: false,
+  zoomSnap: 0.25,
+  zoomDelta: 0.25,
   tileUrl: 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
   attribution: '&copy; OpenStreetMap-bidragsydere &copy; CARTO',
   subdomains: 'abcd',
@@ -38,10 +40,15 @@ function renderRouteLegend(routesGeoJson) {
 
 async function init() {
   const data = await loadBaseData()
+  addOutsideMask(map, data.boundary)
   const boundary = addBoundary(map, data.boundary)
   const routes = addRoutes(map, data.routes)
   const stops = addStops(map, data.stops, { hoverLabels: false })
-  fitAll(map, [boundary])
+  fitBoundsWithPadding(map, boundary, {
+    paddingTopLeft: [0, 0],
+    paddingBottomRight: [0, 0],
+  })
+  map.setZoom(map.getZoom() + 0.25)
   renderRouteLegend(data.routes)
 }
 

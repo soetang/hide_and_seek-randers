@@ -36,7 +36,11 @@ export async function loadBaseData() {
 }
 
 export function createBaseMap(elementId, options = {}) {
-  const map = L.map(elementId, { zoomControl: options.zoomControl ?? true })
+  const map = L.map(elementId, {
+    zoomControl: options.zoomControl ?? true,
+    zoomSnap: options.zoomSnap,
+    zoomDelta: options.zoomDelta,
+  })
   const isDefaultOsm = !options.tileUrl
   L.tileLayer(options.tileUrl || 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: options.attribution || '&copy; OpenStreetMap-bidragsydere',
@@ -54,6 +58,55 @@ export function addBoundary(map, geojson) {
       dashArray: '10 6',
       fillOpacity: 0.03,
     },
+  }).addTo(map)
+}
+
+export function addOutsideMask(map, geojson) {
+  const boundaryFeature = geojson.features?.[0]
+  if (!boundaryFeature) return null
+
+  const rings = []
+  if (boundaryFeature.geometry.type === 'Polygon') {
+    rings.push(boundaryFeature.geometry.coordinates[0])
+  } else if (boundaryFeature.geometry.type === 'MultiPolygon') {
+    for (const polygon of boundaryFeature.geometry.coordinates) {
+      rings.push(polygon[0])
+    }
+  }
+
+  const points = rings.flat()
+  const xs = points.map((point) => point[0])
+  const ys = points.map((point) => point[1])
+  const pad = 0.08
+  const outerRing = [
+    [Math.min(...xs) - pad, Math.min(...ys) - pad],
+    [Math.max(...xs) + pad, Math.min(...ys) - pad],
+    [Math.max(...xs) + pad, Math.max(...ys) + pad],
+    [Math.min(...xs) - pad, Math.max(...ys) + pad],
+    [Math.min(...xs) - pad, Math.min(...ys) - pad],
+  ]
+
+  const mask = {
+    type: 'FeatureCollection',
+    features: [
+      {
+        type: 'Feature',
+        properties: {},
+        geometry: {
+          type: 'Polygon',
+          coordinates: [outerRing, ...rings],
+        },
+      },
+    ],
+  }
+
+  return L.geoJSON(mask, {
+    style: {
+      stroke: false,
+      fillColor: '#ffffff',
+      fillOpacity: 0.5,
+    },
+    interactive: false,
   }).addTo(map)
 }
 
@@ -174,6 +227,16 @@ export function addAfstemningsomraader(map, geojson) {
 export function fitAll(map, layers) {
   const bounds = L.featureGroup(layers).getBounds()
   if (bounds.isValid()) map.fitBounds(bounds.pad(0.08))
+}
+
+export function fitBoundsWithPadding(map, layer, options = {}) {
+  const bounds = layer.getBounds()
+  if (!bounds.isValid()) return
+  map.fitBounds(bounds, {
+    paddingTopLeft: options.paddingTopLeft || [24, 24],
+    paddingBottomRight: options.paddingBottomRight || [24, 24],
+    maxZoom: options.maxZoom,
+  })
 }
 
 export function formatAreaValue(value) {

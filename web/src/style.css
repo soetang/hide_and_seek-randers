@@ -287,22 +287,28 @@ dl div {
   top: 1rem;
   left: 1rem;
   z-index: 500;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   padding: 0.65rem 0.8rem;
   backdrop-filter: blur(2px);
-  max-width: 18rem;
+  max-width: 16rem;
+}
+
+.print-overlay-portrait {
+  top: auto;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 .print-overlay h1 {
   margin: 0 0 0.45rem;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
 }
 
 .print-overlay .print-legend span {
-  margin-top: 0.2rem;
-  font-size: 0.92rem;
+  margin-top: 0.16rem;
+  font-size: 0.88rem;
 }
 
 .route-legend-block {
@@ -311,7 +317,7 @@ dl div {
 
 .route-legend-block h2 {
   margin: 0 0 0.25rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .route-legend-list {
@@ -320,15 +326,15 @@ dl div {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 0.65rem;
-  row-gap: 0.18rem;
+  column-gap: 0.55rem;
+  row-gap: 0.12rem;
 }
 
 .route-legend-item {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  font-size: 0.76rem;
+  gap: 0.35rem;
+  font-size: 0.69rem;
   margin-top: 0;
   break-inside: avoid;
 }
@@ -342,7 +348,7 @@ dl div {
 
 .route-legend-text {
   line-height: 1.2;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 @media (max-width: 900px) {
@@ -423,7 +429,7 @@ dl div {
 
 @media print {
   @page {
-    size: A3 landscape;
+    size: A3 portrait;
     margin: 0;
   }
 
@@ -442,9 +448,10 @@ dl div {
   }
 
   .print-overlay {
-    top: 0.5cm;
+    top: auto;
+    bottom: 0.65cm;
     left: 0.5cm;
-    padding: 0.4cm 0.48cm;
-    max-width: 8.4cm;
+    padding: 0.38cm 0.45cm;
+    max-width: 6.7cm;
   }
 }
