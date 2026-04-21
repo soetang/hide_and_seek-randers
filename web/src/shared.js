@@ -73,9 +73,30 @@ export function addRoutes(map, geojson) {
 export function addStops(map, geojson, options = {}) {
   return L.geoJSON(geojson, {
     pointToLayer: (feature, latlng) => {
-      const radius = feature.properties.major ? 4.25 : 2.75
+      const visibleRadius = feature.properties.major ? 4.25 : 2.75
+      if (options.touchMode) {
+        const hitRadius = feature.properties.major ? 13 : 11
+        const hitArea = L.circleMarker(latlng, {
+          radius: hitRadius,
+          color: '#111',
+          opacity: 0,
+          fillColor: '#111',
+          fillOpacity: 0,
+          weight: 0,
+        })
+        const visibleDot = L.circleMarker(latlng, {
+          radius: visibleRadius,
+          color: '#111',
+          fillColor: '#111',
+          fillOpacity: 0.95,
+          weight: 1,
+          interactive: false,
+        })
+        return L.featureGroup([hitArea, visibleDot])
+      }
+
       return L.circleMarker(latlng, {
-        radius,
+        radius: visibleRadius,
         color: '#111',
         fillColor: '#111',
         fillOpacity: 0.95,
@@ -84,6 +105,9 @@ export function addStops(map, geojson, options = {}) {
     },
     onEachFeature: (feature, layer) => {
       layer.bindPopup(`<strong>${feature.properties.name}</strong><br>${feature.properties.events} direkte bushaendelser<br>${feature.properties.nearby_events} bushaendelser inden for 500 m`)
+      layer.on('click', () => {
+        options.onStopSelect?.(feature)
+      })
       if (options.hoverLabels !== false) {
         layer.bindTooltip(feature.properties.name, {
           sticky: true,

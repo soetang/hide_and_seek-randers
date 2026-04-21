@@ -43,6 +43,7 @@ AFSTEMNINGSOMRAADER_URL = (
     "https://api.dataforsyningen.dk/afstemningsomraader?kommunekode=0730&format=geojson"
 )
 NEARBY_RADIUS_METERS = 500
+REQUIRED_HOURS = tuple(range(9, 18))
 
 
 @dataclass
@@ -149,6 +150,7 @@ def build_transit_dataset(
     }
 
     stop_event_counts: Counter[str] = Counter()
+    stop_hour_counts: dict[str, Counter[int]] = defaultdict(Counter)
     trip_area_sequences: dict[str, list[tuple[int, str]]] = defaultdict(list)
 
     with zipfile.ZipFile(GTFS_ZIP) as archive:
@@ -162,7 +164,15 @@ def build_transit_dataset(
             if is_time_in_window(
                 row.get("departure_time") or row.get("arrival_time") or ""
             ):
+                service_hour = int(
+                    (
+                        row.get("departure_time")
+                        or row.get("arrival_time")
+                        or "0:00:00"
+                    ).split(":", 1)[0]
+                )
                 stop_event_counts[stop_id] += 1
+                stop_hour_counts[stop_id][service_hour] += 1
             trip_area_sequences[trip_id].append(
                 (int(row.get("stop_sequence") or 0), stop_id)
             )
@@ -186,6 +196,7 @@ def build_transit_dataset(
         stop_id
         for stop_id, count in nearby_event_counts.items()
         if is_stop_eligible(count)
+        and all(stop_hour_counts[stop_id][hour] >= 1 for hour in REQUIRED_HOURS)
     }
     route_has_eligible_sequence: dict[str, bool] = defaultdict(bool)
     route_shape_ids: dict[str, set[str]] = defaultdict(set)
@@ -301,7 +312,7 @@ def build_transit_dataset(
         "eligible_stop_count": len(stop_features),
         "included_route_count": len(route_features),
         "play_window": "09:00-18:00 normal lordag",
-        "eligibility_rule": "Stop er eligible hvis stop inden for 500 meter tilsammen har mindst 18 bushaendelser i spilvinduet.",
+        "eligibility_rule": "Stop er gyldigt hvis stop inden for 500 meter tilsammen har mindst 18 bushaendelser i spilvinduet, og stoppet selv har mindst en direkte bushaendelse i hver time fra 09 til 17.",
         "nearby_radius_meters": NEARBY_RADIUS_METERS,
     }
 

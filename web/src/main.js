@@ -26,9 +26,12 @@ let activeSuggestionIndex = -1
 let currentSuggestions = []
 let suggestionRequestToken = 0
 let suggestionDebounceTimer
+const isTouchDevice = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 900
 
 const elements = {
   boundaryNote: document.querySelector('#boundary-note'),
+  mobilePanelToggle: document.querySelector('#mobile-panel-toggle'),
+  mobilePanelHandle: document.querySelector('#mobile-panel-handle'),
   gpsButton: document.querySelector('#gps-button'),
   toggleSogne: document.querySelector('#toggle-sogne'),
   toggleAfstemning: document.querySelector('#toggle-afstemning'),
@@ -41,11 +44,41 @@ const elements = {
   suggestions: document.querySelector('#address-suggestions'),
 }
 
+function setMobilePanelOpen(isOpen) {
+  document.body.classList.toggle('panel-open', isOpen)
+  elements.mobilePanelToggle.textContent = isOpen ? 'Kort' : 'Panel'
+}
+
 function updateResult(result) {
   elements.resultStatus.textContent = result.status
   elements.resultSogn.textContent = formatAreaValue(result.sogn)
   elements.resultPostnummer.textContent = formatAreaValue(result.postnummer)
   elements.resultAfstemning.textContent = formatAreaValue(result.afstemningsomraade)
+}
+
+function updateStopResult(feature) {
+  updateResult({
+    status: `Valgt stoppested: ${feature.properties.name}`,
+    sogn: '-',
+    postnummer: '-',
+    afstemningsomraade: '-',
+  })
+}
+
+function findNearestStopLayer(containerPoint, stopLayer) {
+  let nearest = null
+  let bestDistance = Infinity
+  for (const layer of stopLayer.getLayers()) {
+    const child = layer.getLayers ? layer.getLayers()[0] : layer
+    const latlng = child.getLatLng()
+    const point = map.latLngToContainerPoint(latlng)
+    const distance = Math.hypot(point.x - containerPoint.x, point.y - containerPoint.y)
+    if (distance < bestDistance) {
+      bestDistance = distance
+      nearest = { layer, latlng, distance }
+    }
+  }
+  return nearest
 }
 
 function hideSuggestions() {
@@ -221,11 +254,34 @@ async function init() {
   elements.boundaryNote.textContent = data.metadata.boundary_note
   const boundaryLayer = addBoundary(map, data.boundary)
   const routeLayer = addRoutes(map, data.routes)
-  const stopLayer = addStops(map, data.stops)
+  const stopLayer = addStops(map, data.stops, {
+    touchMode: isTouchDevice,
+    hoverLabels: !isTouchDevice,
+    onStopSelect: updateStopResult,
+  })
   sogneLayer = addSogne(map, data.sogne)
   afstemningLayer = addAfstemningsomraader(map, data.afstemningsomraader)
   map.removeLayer(afstemningLayer)
   fitAll(map, [boundaryLayer])
+
+  window.__appDebug = {
+    map,
+    stopLayer,
+  }
+
+  document.body.classList.toggle('is-mobile-app', isTouchDevice)
+  if (isTouchDevice) {
+    setMobilePanelOpen(false)
+    elements.mobilePanelToggle.hidden = false
+  }
+
+  elements.mobilePanelToggle.addEventListener('click', () => {
+    setMobilePanelOpen(!document.body.classList.contains('panel-open'))
+  })
+  elements.mobilePanelHandle.addEventListener('click', () => {
+    if (!isTouchDevice) return
+    setMobilePanelOpen(!document.body.classList.contains('panel-open'))
+  })
 
   elements.toggleSogne.addEventListener('click', () => {
     if (map.hasLayer(sogneLayer)) {
@@ -245,11 +301,23 @@ async function init() {
 
   elements.gpsButton.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(
-      (position) => runLookup(data.boundary, position.coords.latitude, position.coords.longitude),
+      async (position) => {
+        await runLookup(data.boundary, position.coords.latitude, position.coords.longitude)
+        if (isTouchDevice) setMobilePanelOpen(false)
+      },
       () => updateResult({ status: 'GPS blev afvist eller fejlede.', sogn: '-', postnummer: '-', afstemningsomraade: '-' }),
       { enableHighAccuracy: true, timeout: 15000 },
     )
   })
+
+  if (isTouchDevice) {
+    map.on('click', (event) => {
+      const nearest = findNearestStopLayer(event.containerPoint, stopLayer)
+      if (!nearest || nearest.distance > 18) return
+      nearest.layer.openPopup(nearest.latlng)
+      nearest.layer.fire('click')
+    })
+  }
 
   elements.input.addEventListener('input', (event) => {
     const value = event.target.value
@@ -306,6 +374,7 @@ async function init() {
       return
     }
     await runLookup(data.boundary, coordinate.lat, coordinate.lon)
+    if (isTouchDevice) setMobilePanelOpen(false)
   })
 
   document.body.dataset.appReady = 'true'
