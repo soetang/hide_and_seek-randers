@@ -7,7 +7,7 @@
         "stop_id": "000731000501",
         "name": "Randers St./Viborgvej",
         "events": 12,
-        "nearby_events": 284,
+        "nearby_events": 519,
         "major": false
       },
       "geometry": {
@@ -24,7 +24,7 @@
         "stop_id": "000731000502",
         "name": "Randers St./Viborgvej",
         "events": 12,
-        "nearby_events": 257,
+        "nearby_events": 492,
         "major": false
       },
       "geometry": {
@@ -38,34 +38,34 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "000731000801",
-        "name": "\u00d8lst/Gl. \u00c5rhusvej (Randers kom)",
+        "stop_id": "000731100601",
+        "name": "B\u00f8gelund/Hadstenvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 36,
+        "nearby_events": 63,
         "major": false
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          10.08481,
-          56.387619
+          10.055827,
+          56.407878
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "000731000802",
-        "name": "\u00d8lst/Gl. \u00c5rhusvej (Randers kom)",
+        "stop_id": "000731100602",
+        "name": "B\u00f8gelund/Hadstenvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 36,
+        "nearby_events": 63,
         "major": false
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          10.084366,
-          56.387389
+          10.055715,
+          56.407933
         ]
       }
     },
@@ -75,7 +75,7 @@
         "stop_id": "000731100701",
         "name": "\u00c5rhusvej/Paderup Boulevard (Randers Kom)",
         "events": 17,
-        "nearby_events": 141,
+        "nearby_events": 298,
         "major": false
       },
       "geometry": {
@@ -92,7 +92,7 @@
         "stop_id": "000731100702",
         "name": "\u00c5rhusvej/Paderup Boulevard (Randers Kom)",
         "events": 18,
-        "nearby_events": 116,
+        "nearby_events": 298,
         "major": false
       },
       "geometry": {
@@ -109,7 +109,7 @@
         "stop_id": "000731100801",
         "name": "Hadstenvej/Engelsholmvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 36,
+        "nearby_events": 63,
         "major": false
       },
       "geometry": {
@@ -126,7 +126,7 @@
         "stop_id": "000731100802",
         "name": "Hadstenvej/Engelsholmvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 54,
+        "nearby_events": 63,
         "major": false
       },
       "geometry": {
@@ -143,7 +143,7 @@
         "stop_id": "000731101001",
         "name": "Regionshospitalet Randers/\u00d8stervangsvej",
         "events": 13,
-        "nearby_events": 331,
+        "nearby_events": 726,
         "major": false
       },
       "geometry": {
@@ -160,7 +160,7 @@
         "stop_id": "000731101301",
         "name": "\u00c5rhusvej/Vennelystvej (Randers Kom)",
         "events": 22,
-        "nearby_events": 116,
+        "nearby_events": 433,
         "major": false
       },
       "geometry": {
@@ -177,7 +177,7 @@
         "stop_id": "000731101302",
         "name": "\u00c5rhusvej/Vennelystvej (Randers Kom)",
         "events": 22,
-        "nearby_events": 137,
+        "nearby_events": 300,
         "major": false
       },
       "geometry": {
@@ -194,7 +194,7 @@
         "stop_id": "000731101601",
         "name": "\u00c5rhusvej/Hammelvej (Randers Kom)",
         "events": 21,
-        "nearby_events": 107,
+        "nearby_events": 201,
         "major": false
       },
       "geometry": {
@@ -211,7 +211,7 @@
         "stop_id": "000731101602",
         "name": "\u00c5rhusvej/Hammelvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 140,
+        "nearby_events": 264,
         "major": false
       },
       "geometry": {
@@ -228,7 +228,7 @@
         "stop_id": "000731600301",
         "name": "Fischersgade (Randers Kom)",
         "events": 54,
-        "nearby_events": 576,
+        "nearby_events": 1047,
         "major": true
       },
       "geometry": {
@@ -245,7 +245,7 @@
         "stop_id": "000731600302",
         "name": "Fischersgade (Randers Kom)",
         "events": 54,
-        "nearby_events": 576,
+        "nearby_events": 1061,
         "major": true
       },
       "geometry": {
@@ -262,7 +262,7 @@
         "stop_id": "000731600401",
         "name": "Rosen\u00f8rnsgade (Randers Kom)",
         "events": 71,
-        "nearby_events": 608,
+        "nearby_events": 1047,
         "major": true
       },
       "geometry": {
@@ -279,7 +279,7 @@
         "stop_id": "000731600402",
         "name": "Rosen\u00f8rnsgade (Randers Kom)",
         "events": 72,
-        "nearby_events": 720,
+        "nearby_events": 1017,
         "major": true
       },
       "geometry": {
@@ -296,8 +296,8 @@
         "stop_id": "000731601001",
         "name": "Randers Busterminal",
         "events": 68,
-        "nearby_events": 674,
-        "major": true
+        "nearby_events": 986,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -313,7 +313,7 @@
         "stop_id": "000731601002",
         "name": "Randers Busterminal",
         "events": 69,
-        "nearby_events": 674,
+        "nearby_events": 1013,
         "major": true
       },
       "geometry": {
@@ -330,7 +330,7 @@
         "stop_id": "000731601003",
         "name": "Randers Busterminal",
         "events": 125,
-        "nearby_events": 674,
+        "nearby_events": 1013,
         "major": true
       },
       "geometry": {
@@ -347,7 +347,7 @@
         "stop_id": "000731602801",
         "name": "Randers Regnskov/T\u00f8rvebryggen",
         "events": 53,
-        "nearby_events": 396,
+        "nearby_events": 823,
         "major": false
       },
       "geometry": {
@@ -364,7 +364,7 @@
         "stop_id": "000731602802",
         "name": "Randers Regnskov/T\u00f8rvebryggen",
         "events": 54,
-        "nearby_events": 423,
+        "nearby_events": 895,
         "major": false
       },
       "geometry": {
@@ -381,7 +381,7 @@
         "stop_id": "000731603001",
         "name": "Vestergade/Vestervold (Randers Kom)",
         "events": 15,
-        "nearby_events": 381,
+        "nearby_events": 950,
         "major": false
       },
       "geometry": {
@@ -398,7 +398,7 @@
         "stop_id": "000731603002",
         "name": "Vestergade/Vestervold (Randers Kom)",
         "events": 14,
-        "nearby_events": 354,
+        "nearby_events": 977,
         "major": false
       },
       "geometry": {
@@ -415,8 +415,8 @@
         "stop_id": "000731603101",
         "name": "Vestervold/S\u00f8ren M\u00f8llers Gade (Randers Kom)",
         "events": 27,
-        "nearby_events": 367,
-        "major": false
+        "nearby_events": 1163,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -432,8 +432,8 @@
         "stop_id": "000731603102",
         "name": "Vestervold/S\u00f8ren M\u00f8llers Gade (Randers Kom)",
         "events": 27,
-        "nearby_events": 340,
-        "major": false
+        "nearby_events": 1092,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -449,7 +449,7 @@
         "stop_id": "000731603301",
         "name": "Jernbanegade (Randers Kom)",
         "events": 12,
-        "nearby_events": 327,
+        "nearby_events": 649,
         "major": false
       },
       "geometry": {
@@ -466,7 +466,7 @@
         "stop_id": "000731603302",
         "name": "Jernbanegade (Randers Kom)",
         "events": 12,
-        "nearby_events": 327,
+        "nearby_events": 649,
         "major": false
       },
       "geometry": {
@@ -483,7 +483,7 @@
         "stop_id": "000731603401",
         "name": "Randers St./Vestergade",
         "events": 15,
-        "nearby_events": 434,
+        "nearby_events": 598,
         "major": false
       },
       "geometry": {
@@ -500,7 +500,7 @@
         "stop_id": "000731603402",
         "name": "Randers St./Vestergade",
         "events": 14,
-        "nearby_events": 353,
+        "nearby_events": 615,
         "major": false
       },
       "geometry": {
@@ -517,7 +517,7 @@
         "stop_id": "000731603701",
         "name": "Arena Randers/Sj\u00e6llandsgade",
         "events": 15,
-        "nearby_events": 171,
+        "nearby_events": 358,
         "major": false
       },
       "geometry": {
@@ -534,7 +534,7 @@
         "stop_id": "000731603702",
         "name": "Arena Randers/Sj\u00e6llandsgade",
         "events": 14,
-        "nearby_events": 171,
+        "nearby_events": 350,
         "major": false
       },
       "geometry": {
@@ -551,7 +551,7 @@
         "stop_id": "000731603901",
         "name": "Stolemagervej/Vestre Boulevard (Randers Kom)",
         "events": 15,
-        "nearby_events": 129,
+        "nearby_events": 301,
         "major": false
       },
       "geometry": {
@@ -568,7 +568,7 @@
         "stop_id": "000731603902",
         "name": "Stolemagervej/Vestre Boulevard (Randers Kom)",
         "events": 14,
-        "nearby_events": 129,
+        "nearby_events": 259,
         "major": false
       },
       "geometry": {
@@ -585,7 +585,7 @@
         "stop_id": "000731604402",
         "name": "Mariagervej/Tradium (Randers Kom)",
         "events": 27,
-        "nearby_events": 414,
+        "nearby_events": 795,
         "major": false
       },
       "geometry": {
@@ -602,7 +602,7 @@
         "stop_id": "000731604501",
         "name": "Hobrovejens Skole/Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 382,
+        "nearby_events": 875,
         "major": false
       },
       "geometry": {
@@ -619,7 +619,7 @@
         "stop_id": "000731604502",
         "name": "Hobrovejens Skole/Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 382,
+        "nearby_events": 875,
         "major": false
       },
       "geometry": {
@@ -636,8 +636,8 @@
         "stop_id": "000731604901",
         "name": "Markedsgade (Randers Kom)",
         "events": 27,
-        "nearby_events": 353,
-        "major": false
+        "nearby_events": 1186,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -653,8 +653,8 @@
         "stop_id": "000731604902",
         "name": "Markedsgade (Randers Kom)",
         "events": 27,
-        "nearby_events": 425,
-        "major": false
+        "nearby_events": 1213,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -670,8 +670,8 @@
         "stop_id": "000731605001",
         "name": "Rundk\u00f8rslen/Udbyh\u00f8jvej (Randers Kom)",
         "events": 31,
-        "nearby_events": 458,
-        "major": false
+        "nearby_events": 1052,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -687,8 +687,8 @@
         "stop_id": "000731605002",
         "name": "Rundk\u00f8rslen/Udbyh\u00f8jvej (Randers Kom)",
         "events": 32,
-        "nearby_events": 458,
-        "major": false
+        "nearby_events": 1052,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -704,7 +704,7 @@
         "stop_id": "000731605501",
         "name": "\u00d8stre Kirkeg\u00e5rd/Udbyh\u00f8jvej (Randers Kom)",
         "events": 31,
-        "nearby_events": 423,
+        "nearby_events": 853,
         "major": false
       },
       "geometry": {
@@ -721,7 +721,7 @@
         "stop_id": "000731605502",
         "name": "\u00d8stre Kirkeg\u00e5rd/Udbyh\u00f8jvej (Randers Kom)",
         "events": 32,
-        "nearby_events": 458,
+        "nearby_events": 871,
         "major": false
       },
       "geometry": {
@@ -738,7 +738,7 @@
         "stop_id": "000731607601",
         "name": "Regionshospitalet Randers/Skovlyvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 493,
+        "nearby_events": 681,
         "major": false
       },
       "geometry": {
@@ -755,7 +755,7 @@
         "stop_id": "000731607602",
         "name": "Regionshospitalet Randers/Skovlyvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 493,
+        "nearby_events": 672,
         "major": false
       },
       "geometry": {
@@ -772,8 +772,8 @@
         "stop_id": "000731607701",
         "name": "\u00d8stervangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 520,
-        "major": true
+        "nearby_events": 799,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -789,8 +789,8 @@
         "stop_id": "000731607702",
         "name": "\u00d8stervangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 520,
-        "major": true
+        "nearby_events": 830,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -806,7 +806,7 @@
         "stop_id": "000731608002",
         "name": "\u00d8stervangsskolen/Dronningborg Boulevard (Randers)",
         "events": 27,
-        "nearby_events": 189,
+        "nearby_events": 592,
         "major": false
       },
       "geometry": {
@@ -823,8 +823,8 @@
         "stop_id": "000731608101",
         "name": "Solstien/P. Knudsens Vej (Randers Kom)",
         "events": 27,
-        "nearby_events": 535,
-        "major": true
+        "nearby_events": 718,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -840,8 +840,8 @@
         "stop_id": "000731608102",
         "name": "Solstien/P. Knudsens Vej (Randers Kom)",
         "events": 27,
-        "nearby_events": 539,
-        "major": true
+        "nearby_events": 718,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -857,7 +857,7 @@
         "stop_id": "000731608201",
         "name": "Hermann Stillings Vej (Randers Kom)",
         "events": 27,
-        "nearby_events": 382,
+        "nearby_events": 701,
         "major": false
       },
       "geometry": {
@@ -874,7 +874,7 @@
         "stop_id": "000731608202",
         "name": "Hermann Stillings Vej (Randers Kom)",
         "events": 27,
-        "nearby_events": 410,
+        "nearby_events": 697,
         "major": false
       },
       "geometry": {
@@ -891,7 +891,7 @@
         "stop_id": "000731609301",
         "name": "L\u00f8venholmvej/Dronningborg Boulevard (Randers Kom)",
         "events": 27,
-        "nearby_events": 243,
+        "nearby_events": 584,
         "major": false
       },
       "geometry": {
@@ -908,7 +908,7 @@
         "stop_id": "000731609302",
         "name": "L\u00f8venholmvej/Dronningborg Boulevard (Randers Kom)",
         "events": 27,
-        "nearby_events": 243,
+        "nearby_events": 634,
         "major": false
       },
       "geometry": {
@@ -925,7 +925,7 @@
         "stop_id": "000731609501",
         "name": "Bjellerupparken/Dronningborg Boulevard (Randers)",
         "events": 27,
-        "nearby_events": 189,
+        "nearby_events": 369,
         "major": false
       },
       "geometry": {
@@ -942,7 +942,7 @@
         "stop_id": "000731609502",
         "name": "Bjellerupparken/Dronningborg Boulevard (Randers)",
         "events": 27,
-        "nearby_events": 189,
+        "nearby_events": 342,
         "major": false
       },
       "geometry": {
@@ -959,7 +959,7 @@
         "stop_id": "000731610801",
         "name": "Endestation/Torupdalvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 81,
+        "nearby_events": 126,
         "major": false
       },
       "geometry": {
@@ -976,7 +976,7 @@
         "stop_id": "000731611101",
         "name": "Tj\u00e6rbyvej/Nyholmsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 257,
+        "nearby_events": 378,
         "major": false
       },
       "geometry": {
@@ -993,7 +993,7 @@
         "stop_id": "000731611102",
         "name": "Tj\u00e6rbyvej/Nyholmsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 257,
+        "nearby_events": 378,
         "major": false
       },
       "geometry": {
@@ -1010,7 +1010,7 @@
         "stop_id": "000731611203",
         "name": "\u00d8stre Boulevard/Udbyh\u00f8jvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 261,
+        "nearby_events": 329,
         "major": false
       },
       "geometry": {
@@ -1027,7 +1027,7 @@
         "stop_id": "000731611301",
         "name": "Udbyh\u00f8jvej/Stenaltvej (Randers Kom)",
         "events": 31,
-        "nearby_events": 270,
+        "nearby_events": 387,
         "major": false
       },
       "geometry": {
@@ -1044,7 +1044,7 @@
         "stop_id": "000731611501",
         "name": "Klostervej/Tj\u00e6rbyvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 229,
+        "nearby_events": 337,
         "major": false
       },
       "geometry": {
@@ -1061,7 +1061,7 @@
         "stop_id": "000731611502",
         "name": "Klostervej/Tj\u00e6rbyvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 229,
+        "nearby_events": 337,
         "major": false
       },
       "geometry": {
@@ -1078,7 +1078,7 @@
         "stop_id": "000731612501",
         "name": "Endestation/Platanvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 97,
+        "nearby_events": 228,
         "major": false
       },
       "geometry": {
@@ -1095,7 +1095,7 @@
         "stop_id": "000731612802",
         "name": "Platanvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 242,
+        "nearby_events": 339,
         "major": false
       },
       "geometry": {
@@ -1112,7 +1112,7 @@
         "stop_id": "000731613501",
         "name": "N\u00f8rre All\u00e9/Mariagervej (Randers Kom)",
         "events": 32,
-        "nearby_events": 270,
+        "nearby_events": 676,
         "major": false
       },
       "geometry": {
@@ -1129,7 +1129,7 @@
         "stop_id": "000731613502",
         "name": "N\u00f8rre All\u00e9/Mariagervej (Randers Kom)",
         "events": 32,
-        "nearby_events": 270,
+        "nearby_events": 733,
         "major": false
       },
       "geometry": {
@@ -1146,7 +1146,7 @@
         "stop_id": "000731613701",
         "name": "Energivej/Mariagervej (Randers Kom)",
         "events": 27,
-        "nearby_events": 299,
+        "nearby_events": 603,
         "major": false
       },
       "geometry": {
@@ -1163,7 +1163,7 @@
         "stop_id": "000731613702",
         "name": "Energivej/Mariagervej (Randers Kom)",
         "events": 27,
-        "nearby_events": 284,
+        "nearby_events": 568,
         "major": false
       },
       "geometry": {
@@ -1180,7 +1180,7 @@
         "stop_id": "000731614001",
         "name": "Irisvej/Mariagervej (Randers Kom)",
         "events": 32,
-        "nearby_events": 307,
+        "nearby_events": 590,
         "major": false
       },
       "geometry": {
@@ -1197,7 +1197,7 @@
         "stop_id": "000731614002",
         "name": "Irisvej/Mariagervej (Randers Kom)",
         "events": 32,
-        "nearby_events": 258,
+        "nearby_events": 515,
         "major": false
       },
       "geometry": {
@@ -1214,7 +1214,7 @@
         "stop_id": "000731615101",
         "name": "N\u00f8rrebrogade/Glarbjergvej (Randers Kom)",
         "events": 26,
-        "nearby_events": 257,
+        "nearby_events": 419,
         "major": false
       },
       "geometry": {
@@ -1231,7 +1231,7 @@
         "stop_id": "000731615102",
         "name": "N\u00f8rrebrogade/Glarbjergvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 257,
+        "nearby_events": 401,
         "major": false
       },
       "geometry": {
@@ -1248,7 +1248,7 @@
         "stop_id": "000731616101",
         "name": "Flyvervej/Garnisonsvej (Randers Kom)",
         "events": 36,
-        "nearby_events": 287,
+        "nearby_events": 404,
         "major": false
       },
       "geometry": {
@@ -1265,7 +1265,7 @@
         "stop_id": "000731616203",
         "name": "Hadsundvej/Garnisonsvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 120,
+        "nearby_events": 278,
         "major": false
       },
       "geometry": {
@@ -1282,7 +1282,7 @@
         "stop_id": "000731616301",
         "name": "Platanvej/Hadsundvej (Randers Kom)",
         "events": 22,
-        "nearby_events": 291,
+        "nearby_events": 343,
         "major": false
       },
       "geometry": {
@@ -1299,7 +1299,7 @@
         "stop_id": "000731616302",
         "name": "Platanvej/Hadsundvej (Randers Kom)",
         "events": 22,
-        "nearby_events": 278,
+        "nearby_events": 335,
         "major": false
       },
       "geometry": {
@@ -1316,7 +1316,7 @@
         "stop_id": "000731617502",
         "name": "Skolevej/R\u00e5dmands Blvd. (Randers)",
         "events": 27,
-        "nearby_events": 352,
+        "nearby_events": 722,
         "major": false
       },
       "geometry": {
@@ -1333,7 +1333,7 @@
         "stop_id": "000731617504",
         "name": "Skolevej/R\u00e5dmands Blvd. (Randers)",
         "events": 27,
-        "nearby_events": 337,
+        "nearby_events": 735,
         "major": false
       },
       "geometry": {
@@ -1350,7 +1350,7 @@
         "stop_id": "000731617701",
         "name": "Randers Statsskole/Nyvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 323,
+        "nearby_events": 690,
         "major": false
       },
       "geometry": {
@@ -1367,7 +1367,7 @@
         "stop_id": "000731617702",
         "name": "Randers Statsskole/Nyvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 350,
+        "nearby_events": 686,
         "major": false
       },
       "geometry": {
@@ -1384,7 +1384,7 @@
         "stop_id": "000731619001",
         "name": "Rindsvej/Nyvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 334,
+        "nearby_events": 615,
         "major": false
       },
       "geometry": {
@@ -1401,7 +1401,7 @@
         "stop_id": "000731619002",
         "name": "Rindsvej/Nyvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 334,
+        "nearby_events": 596,
         "major": false
       },
       "geometry": {
@@ -1418,7 +1418,7 @@
         "stop_id": "000731619101",
         "name": "\u00c6girsvej/Gl. Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 286,
+        "nearby_events": 520,
         "major": false
       },
       "geometry": {
@@ -1435,7 +1435,7 @@
         "stop_id": "000731619102",
         "name": "\u00c6girsvej/Gl. Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 251,
+        "nearby_events": 520,
         "major": false
       },
       "geometry": {
@@ -1452,7 +1452,7 @@
         "stop_id": "000731620101",
         "name": "Lucernevej/Skelvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 324,
+        "nearby_events": 506,
         "major": false
       },
       "geometry": {
@@ -1469,7 +1469,7 @@
         "stop_id": "000731620102",
         "name": "Lucernevej/Skelvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 297,
+        "nearby_events": 496,
         "major": false
       },
       "geometry": {
@@ -1486,7 +1486,7 @@
         "stop_id": "000731620401",
         "name": "Majsvangen/Skelvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 288,
+        "nearby_events": 417,
         "major": false
       },
       "geometry": {
@@ -1503,7 +1503,7 @@
         "stop_id": "000731620402",
         "name": "Majsvangen/Skelvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 315,
+        "nearby_events": 403,
         "major": false
       },
       "geometry": {
@@ -1520,7 +1520,7 @@
         "stop_id": "000731620501",
         "name": "Endestation/Nordskellet (Randers Kom)",
         "events": 84,
-        "nearby_events": 275,
+        "nearby_events": 314,
         "major": false
       },
       "geometry": {
@@ -1537,7 +1537,7 @@
         "stop_id": "000731620701",
         "name": "Gardervej/Glarbjergvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 186,
+        "nearby_events": 487,
         "major": false
       },
       "geometry": {
@@ -1554,7 +1554,7 @@
         "stop_id": "000731620702",
         "name": "Gardervej/Glarbjergvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 186,
+        "nearby_events": 473,
         "major": false
       },
       "geometry": {
@@ -1571,7 +1571,7 @@
         "stop_id": "000731621001",
         "name": "Nordskellet/Trelleborg Alle (Randers Kom)",
         "events": 14,
-        "nearby_events": 196,
+        "nearby_events": 319,
         "major": false
       },
       "geometry": {
@@ -1588,7 +1588,7 @@
         "stop_id": "000731621002",
         "name": "Nordskellet/Trelleborg Alle (Randers Kom)",
         "events": 15,
-        "nearby_events": 250,
+        "nearby_events": 304,
         "major": false
       },
       "geometry": {
@@ -1605,7 +1605,7 @@
         "stop_id": "000731621101",
         "name": "Fyrkat All\u00e9/Nordskellet (Randers Kom)",
         "events": 14,
-        "nearby_events": 87,
+        "nearby_events": 325,
         "major": false
       },
       "geometry": {
@@ -1622,7 +1622,7 @@
         "stop_id": "000731621102",
         "name": "Fyrkat All\u00e9/Nordskellet (Randers Kom)",
         "events": 15,
-        "nearby_events": 116,
+        "nearby_events": 312,
         "major": false
       },
       "geometry": {
@@ -1639,7 +1639,7 @@
         "stop_id": "000731621501",
         "name": "Vangdalsparken/Gl. Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 224,
+        "nearby_events": 402,
         "major": false
       },
       "geometry": {
@@ -1656,7 +1656,7 @@
         "stop_id": "000731621502",
         "name": "Vangdalsparken/Gl. Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 247,
+        "nearby_events": 402,
         "major": false
       },
       "geometry": {
@@ -1673,7 +1673,7 @@
         "stop_id": "000731623101",
         "name": "Vestervangskolen/G\u00f8rtlervej (Randers Kom)",
         "events": 15,
-        "nearby_events": 111,
+        "nearby_events": 309,
         "major": false
       },
       "geometry": {
@@ -1690,7 +1690,7 @@
         "stop_id": "000731623102",
         "name": "Vestervangskolen/G\u00f8rtlervej (Randers Kom)",
         "events": 14,
-        "nearby_events": 111,
+        "nearby_events": 280,
         "major": false
       },
       "geometry": {
@@ -1707,7 +1707,7 @@
         "stop_id": "000731623301",
         "name": "Oust M\u00f8llevej/G\u00f8rrilds All\u00e9 (Randers Kom)",
         "events": 15,
-        "nearby_events": 139,
+        "nearby_events": 242,
         "major": false
       },
       "geometry": {
@@ -1724,7 +1724,7 @@
         "stop_id": "000731623302",
         "name": "Oust M\u00f8llevej/G\u00f8rrilds All\u00e9 (Randers Kom)",
         "events": 14,
-        "nearby_events": 124,
+        "nearby_events": 257,
         "major": false
       },
       "geometry": {
@@ -1741,7 +1741,7 @@
         "stop_id": "000731623401",
         "name": "Pottemagervej/G\u00f8rrilds All\u00e9 (Randers Kom)",
         "events": 15,
-        "nearby_events": 172,
+        "nearby_events": 213,
         "major": false
       },
       "geometry": {
@@ -1758,7 +1758,7 @@
         "stop_id": "000731623402",
         "name": "Pottemagervej/G\u00f8rrilds All\u00e9 (Randers Kom)",
         "events": 14,
-        "nearby_events": 172,
+        "nearby_events": 213,
         "major": false
       },
       "geometry": {
@@ -1775,7 +1775,7 @@
         "stop_id": "000731623501",
         "name": "K\u00e6rsmindeparken/G\u00f8rrilds All\u00e9 (Randers Kom)",
         "events": 15,
-        "nearby_events": 153,
+        "nearby_events": 227,
         "major": false
       },
       "geometry": {
@@ -1792,7 +1792,7 @@
         "stop_id": "000731623502",
         "name": "K\u00e6rsmindeparken/G\u00f8rrilds All\u00e9 (Randers Kom)",
         "events": 14,
-        "nearby_events": 149,
+        "nearby_events": 227,
         "major": false
       },
       "geometry": {
@@ -1809,7 +1809,7 @@
         "stop_id": "000731624101",
         "name": "Oust M\u00f8llevej (Randers Kom)",
         "events": 14,
-        "nearby_events": 124,
+        "nearby_events": 285,
         "major": false
       },
       "geometry": {
@@ -1826,7 +1826,7 @@
         "stop_id": "000731624102",
         "name": "Oust M\u00f8llevej (Randers Kom)",
         "events": 15,
-        "nearby_events": 124,
+        "nearby_events": 285,
         "major": false
       },
       "geometry": {
@@ -1843,7 +1843,7 @@
         "stop_id": "000731625003",
         "name": "Helstedvej/Hobrovej (Randers Kom)",
         "events": 15,
-        "nearby_events": 222,
+        "nearby_events": 313,
         "major": false
       },
       "geometry": {
@@ -1860,7 +1860,7 @@
         "stop_id": "000731625101",
         "name": "Engh\u00f8j Kirke/Engh\u00f8j All\u00e9 (Randers Kom)",
         "events": 15,
-        "nearby_events": 161,
+        "nearby_events": 284,
         "major": false
       },
       "geometry": {
@@ -1877,7 +1877,7 @@
         "stop_id": "000731625102",
         "name": "Engh\u00f8j Kirke/Engh\u00f8j All\u00e9 (Randers Kom)",
         "events": 14,
-        "nearby_events": 161,
+        "nearby_events": 284,
         "major": false
       },
       "geometry": {
@@ -1894,7 +1894,7 @@
         "stop_id": "000731625201",
         "name": "Nordskellet/Karlsvognen (Randers Kom)",
         "events": 15,
-        "nearby_events": 153,
+        "nearby_events": 218,
         "major": false
       },
       "geometry": {
@@ -1911,7 +1911,7 @@
         "stop_id": "000731625202",
         "name": "Nordskellet/Karlsvognen (Randers Kom)",
         "events": 14,
-        "nearby_events": 153,
+        "nearby_events": 204,
         "major": false
       },
       "geometry": {
@@ -1928,7 +1928,7 @@
         "stop_id": "000731625301",
         "name": "Helsted B\u00f8rnehus/R\u00f8nneb\u00e6rvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 124,
+        "nearby_events": 255,
         "major": false
       },
       "geometry": {
@@ -1945,7 +1945,7 @@
         "stop_id": "000731625302",
         "name": "Helsted B\u00f8rnehus/R\u00f8nneb\u00e6rvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 139,
+        "nearby_events": 255,
         "major": false
       },
       "geometry": {
@@ -1962,7 +1962,7 @@
         "stop_id": "000731625402",
         "name": "Tytteb\u00e6rvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 127,
+        "nearby_events": 251,
         "major": false
       },
       "geometry": {
@@ -1979,7 +1979,7 @@
         "stop_id": "000731625502",
         "name": "Kv\u00e6devej/R\u00f8nneb\u00e6rvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 160,
+        "nearby_events": 284,
         "major": false
       },
       "geometry": {
@@ -1996,7 +1996,7 @@
         "stop_id": "000731625601",
         "name": "Svejstrupvej/Egeg\u00e5rdsvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 131,
+        "nearby_events": 247,
         "major": false
       },
       "geometry": {
@@ -2013,7 +2013,7 @@
         "stop_id": "000731626001",
         "name": "Parkboulevarden/Viborgvej (Randers Kom)",
         "events": 12,
-        "nearby_events": 87,
+        "nearby_events": 157,
         "major": false
       },
       "geometry": {
@@ -2030,7 +2030,7 @@
         "stop_id": "000731626002",
         "name": "Parkboulevarden/Viborgvej (Randers Kom)",
         "events": 12,
-        "nearby_events": 87,
+        "nearby_events": 143,
         "major": false
       },
       "geometry": {
@@ -2047,7 +2047,7 @@
         "stop_id": "000731626101",
         "name": "Randers Stadion/Viborgvej",
         "events": 12,
-        "nearby_events": 113,
+        "nearby_events": 210,
         "major": false
       },
       "geometry": {
@@ -2064,7 +2064,7 @@
         "stop_id": "000731626102",
         "name": "Randers Stadion/Viborgvej",
         "events": 12,
-        "nearby_events": 89,
+        "nearby_events": 199,
         "major": false
       },
       "geometry": {
@@ -2081,7 +2081,7 @@
         "stop_id": "000731626502",
         "name": "Fladbrovej/Viborgvej (Randers Kom)",
         "events": 12,
-        "nearby_events": 75,
+        "nearby_events": 101,
         "major": false
       },
       "geometry": {
@@ -2095,10 +2095,78 @@
     {
       "type": "Feature",
       "properties": {
+        "stop_id": "000731632501",
+        "name": "Tj\u00e6rby Diger All\u00e9/Tj\u00e6rbyvangsvej (Randers Kom)",
+        "events": 13,
+        "nearby_events": 54,
+        "major": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.102702,
+          56.477589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "000731632502",
+        "name": "Tj\u00e6rby Diger All\u00e9/Tj\u00e6rbyvangsvej (Randers Kom)",
+        "events": 14,
+        "nearby_events": 81,
+        "major": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.102595,
+          56.477267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "000731633401",
+        "name": "Dalene/Tj\u00e6rbyvej (Randers Kom)",
+        "events": 13,
+        "nearby_events": 95,
+        "major": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.095495,
+          56.472001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "000731633402",
+        "name": "Dalene/Tj\u00e6rbyvej (Randers Kom)",
+        "events": 14,
+        "nearby_events": 95,
+        "major": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.095465,
+          56.47211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "stop_id": "000731633601",
         "name": "Tj\u00e6rbyvej/Torupdalvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 135,
+        "nearby_events": 279,
         "major": false
       },
       "geometry": {
@@ -2115,7 +2183,7 @@
         "stop_id": "000731633603",
         "name": "Tj\u00e6rbyvej/Torupdalvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 135,
+        "nearby_events": 279,
         "major": false
       },
       "geometry": {
@@ -2132,7 +2200,7 @@
         "stop_id": "000731633604",
         "name": "Tj\u00e6rbyvej/Torupdalvej (Randers Kom)",
         "events": 13,
-        "nearby_events": 135,
+        "nearby_events": 279,
         "major": false
       },
       "geometry": {
@@ -2146,11 +2214,45 @@
     {
       "type": "Feature",
       "properties": {
+        "stop_id": "000731642001",
+        "name": "S\u00f8nder Borup/Karlsbergvej (Randers Kom)",
+        "events": 9,
+        "nearby_events": 63,
+        "major": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.065085,
+          56.408051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stop_id": "000731642002",
+        "name": "S\u00f8nder Borup/Karlsbergvej (Randers Kom)",
+        "events": 9,
+        "nearby_events": 63,
+        "major": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.065231,
+          56.408068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "stop_id": "000731642501",
         "name": "\u00c5rhusvej/Gren\u00e5vej (Randers Kom)",
         "events": 27,
-        "nearby_events": 527,
-        "major": true
+        "nearby_events": 876,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -2166,8 +2268,8 @@
         "stop_id": "000731642502",
         "name": "\u00c5rhusvej/Gren\u00e5vej (Randers Kom)",
         "events": 27,
-        "nearby_events": 526,
-        "major": true
+        "nearby_events": 803,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -2183,7 +2285,7 @@
         "stop_id": "000731642601",
         "name": "\u00c5rhusvej/B\u00f8sbrovej (Randers Kom)",
         "events": 36,
-        "nearby_events": 338,
+        "nearby_events": 504,
         "major": false
       },
       "geometry": {
@@ -2200,7 +2302,7 @@
         "stop_id": "000731642602",
         "name": "\u00c5rhusvej/B\u00f8sbrovej (Randers Kom)",
         "events": 45,
-        "nearby_events": 343,
+        "nearby_events": 439,
         "major": false
       },
       "geometry": {
@@ -2217,7 +2319,7 @@
         "stop_id": "000731642603",
         "name": "\u00c5rhusvej/B\u00f8sbrovej (Randers Kom)",
         "events": 9,
-        "nearby_events": 316,
+        "nearby_events": 457,
         "major": false
       },
       "geometry": {
@@ -2234,7 +2336,7 @@
         "stop_id": "000731642701",
         "name": "Tronholmen/Gren\u00e5vej (Randers Kom)",
         "events": 29,
-        "nearby_events": 238,
+        "nearby_events": 891,
         "major": false
       },
       "geometry": {
@@ -2251,7 +2353,7 @@
         "stop_id": "000731642702",
         "name": "Tronholmen/Gren\u00e5vej (Randers Kom)",
         "events": 29,
-        "nearby_events": 238,
+        "nearby_events": 891,
         "major": false
       },
       "geometry": {
@@ -2268,7 +2370,7 @@
         "stop_id": "000731643001",
         "name": "Kristrup Torv/Valdemarsvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 330,
+        "nearby_events": 627,
         "major": false
       },
       "geometry": {
@@ -2285,7 +2387,7 @@
         "stop_id": "000731643002",
         "name": "Kristrup Torv/Valdemarsvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 330,
+        "nearby_events": 582,
         "major": false
       },
       "geometry": {
@@ -2302,7 +2404,7 @@
         "stop_id": "000731643101",
         "name": "Juttasvej/Hans Bojes All\u00e9 (Randers Kom)",
         "events": 15,
-        "nearby_events": 399,
+        "nearby_events": 596,
         "major": false
       },
       "geometry": {
@@ -2319,7 +2421,7 @@
         "stop_id": "000731643102",
         "name": "Juttasvej/Hans Bojes All\u00e9 (Randers Kom)",
         "events": 14,
-        "nearby_events": 352,
+        "nearby_events": 565,
         "major": false
       },
       "geometry": {
@@ -2336,7 +2438,7 @@
         "stop_id": "000731643201",
         "name": "\u00c5rhusvej/Hans Bojes All\u00e9 (Randers Kom)",
         "events": 22,
-        "nearby_events": 262,
+        "nearby_events": 582,
         "major": false
       },
       "geometry": {
@@ -2353,7 +2455,7 @@
         "stop_id": "000731643202",
         "name": "\u00c5rhusvej/Hans Bojes All\u00e9 (Randers Kom)",
         "events": 37,
-        "nearby_events": 289,
+        "nearby_events": 582,
         "major": false
       },
       "geometry": {
@@ -2370,7 +2472,7 @@
         "stop_id": "000731643402",
         "name": "Hans Bojes All\u00e9/\u00c5rhusvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 289,
+        "nearby_events": 600,
         "major": false
       },
       "geometry": {
@@ -2387,7 +2489,7 @@
         "stop_id": "000731643601",
         "name": "Suderholmen/Gren\u00e5vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 344,
+        "nearby_events": 517,
         "major": false
       },
       "geometry": {
@@ -2404,7 +2506,7 @@
         "stop_id": "000731643602",
         "name": "Suderholmen/Gren\u00e5vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 283,
+        "nearby_events": 487,
         "major": false
       },
       "geometry": {
@@ -2421,7 +2523,7 @@
         "stop_id": "000731643801",
         "name": "FGU \u00d8stjylland/Engboulevarden",
         "events": 18,
-        "nearby_events": 207,
+        "nearby_events": 550,
         "major": false
       },
       "geometry": {
@@ -2438,7 +2540,7 @@
         "stop_id": "000731643802",
         "name": "FGU \u00d8stjylland/Engboulevarden",
         "events": 18,
-        "nearby_events": 207,
+        "nearby_events": 514,
         "major": false
       },
       "geometry": {
@@ -2455,7 +2557,7 @@
         "stop_id": "000731644601",
         "name": "Randers Bibliotek Syd/Kristrupvej",
         "events": 15,
-        "nearby_events": 337,
+        "nearby_events": 555,
         "major": false
       },
       "geometry": {
@@ -2472,7 +2574,7 @@
         "stop_id": "000731644602",
         "name": "Randers Bibliotek Syd/Kristrupvej",
         "events": 15,
-        "nearby_events": 354,
+        "nearby_events": 533,
         "major": false
       },
       "geometry": {
@@ -2489,7 +2591,7 @@
         "stop_id": "000731644701",
         "name": "Kristrup Kirke/Kristrupvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 225,
+        "nearby_events": 568,
         "major": false
       },
       "geometry": {
@@ -2506,7 +2608,7 @@
         "stop_id": "000731644702",
         "name": "Kristrup Kirke/Kristrupvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 311,
+        "nearby_events": 550,
         "major": false
       },
       "geometry": {
@@ -2523,7 +2625,7 @@
         "stop_id": "000731644901",
         "name": "Kristrup M\u00f8llevej/Kristrupvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 282,
+        "nearby_events": 376,
         "major": false
       },
       "geometry": {
@@ -2540,7 +2642,7 @@
         "stop_id": "000731644902",
         "name": "Kristrup M\u00f8llevej/Kristrupvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 264,
+        "nearby_events": 376,
         "major": false
       },
       "geometry": {
@@ -2557,7 +2659,7 @@
         "stop_id": "000731645003",
         "name": "R. Houg\u00e5rds Vej/Vennelystvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 286,
+        "nearby_events": 537,
         "major": false
       },
       "geometry": {
@@ -2574,7 +2676,7 @@
         "stop_id": "000731645004",
         "name": "R. Houg\u00e5rds Vej/Vennelystvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 283,
+        "nearby_events": 537,
         "major": false
       },
       "geometry": {
@@ -2591,7 +2693,7 @@
         "stop_id": "000731646001",
         "name": "Tirsdalens Skole/R. Houg\u00e5rds Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 180,
+        "nearby_events": 332,
         "major": false
       },
       "geometry": {
@@ -2608,7 +2710,7 @@
         "stop_id": "000731646002",
         "name": "Tirsdalens Skole/R. Houg\u00e5rds Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 195,
+        "nearby_events": 332,
         "major": false
       },
       "geometry": {
@@ -2625,7 +2727,7 @@
         "stop_id": "000731646201",
         "name": "Asser Rigs Vej/Eskildsvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 326,
+        "nearby_events": 539,
         "major": false
       },
       "geometry": {
@@ -2642,7 +2744,7 @@
         "stop_id": "000731646202",
         "name": "Asser Rigs Vej/Eskildsvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 347,
+        "nearby_events": 521,
         "major": false
       },
       "geometry": {
@@ -2659,7 +2761,7 @@
         "stop_id": "000731646301",
         "name": "Holger Danskes Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 224,
+        "nearby_events": 325,
         "major": false
       },
       "geometry": {
@@ -2676,7 +2778,7 @@
         "stop_id": "000731646302",
         "name": "Holger Danskes Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 206,
+        "nearby_events": 343,
         "major": false
       },
       "geometry": {
@@ -2693,7 +2795,7 @@
         "stop_id": "000731647201",
         "name": "Rensdyrvej/Gl. Romaltvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 146,
+        "nearby_events": 297,
         "major": false
       },
       "geometry": {
@@ -2710,7 +2812,7 @@
         "stop_id": "000731647202",
         "name": "Rensdyrvej/Gl. Romaltvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 146,
+        "nearby_events": 297,
         "major": false
       },
       "geometry": {
@@ -2727,7 +2829,7 @@
         "stop_id": "000731649101",
         "name": "L\u00f8gst\u00f8rvej/B\u00f8sbrovej (Randers Kom)",
         "events": 9,
-        "nearby_events": 73,
+        "nearby_events": 246,
         "major": false
       },
       "geometry": {
@@ -2744,7 +2846,7 @@
         "stop_id": "000731651401",
         "name": "Guitarvej/S\u00f8ndermarksvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 103,
+        "nearby_events": 155,
         "major": false
       },
       "geometry": {
@@ -2761,7 +2863,7 @@
         "stop_id": "000731651402",
         "name": "Guitarvej/S\u00f8ndermarksvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 112,
+        "nearby_events": 155,
         "major": false
       },
       "geometry": {
@@ -2778,7 +2880,7 @@
         "stop_id": "000731651601",
         "name": "B\u00f8sbrovej/Svendborgvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 69,
+        "nearby_events": 166,
         "major": false
       },
       "geometry": {
@@ -2795,7 +2897,7 @@
         "stop_id": "000731651701",
         "name": "\u00c5rhusvej/Ribevej (Randers Kom)",
         "events": 22,
-        "nearby_events": 86,
+        "nearby_events": 192,
         "major": false
       },
       "geometry": {
@@ -2812,7 +2914,7 @@
         "stop_id": "000731651702",
         "name": "\u00c5rhusvej/Ribevej (Randers Kom)",
         "events": 21,
-        "nearby_events": 90,
+        "nearby_events": 170,
         "major": false
       },
       "geometry": {
@@ -2829,7 +2931,7 @@
         "stop_id": "000731651801",
         "name": "Orkestervej/B\u00f8sbrovej (Randers Kom)",
         "events": 9,
-        "nearby_events": 98,
+        "nearby_events": 128,
         "major": false
       },
       "geometry": {
@@ -2846,7 +2948,7 @@
         "stop_id": "000731651802",
         "name": "Orkestervej/B\u00f8sbrovej (Randers Kom)",
         "events": 9,
-        "nearby_events": 98,
+        "nearby_events": 128,
         "major": false
       },
       "geometry": {
@@ -2863,7 +2965,7 @@
         "stop_id": "000731655201",
         "name": "Romaltvej/Mejerivej (Randers Kom)",
         "events": 15,
-        "nearby_events": 87,
+        "nearby_events": 174,
         "major": false
       },
       "geometry": {
@@ -2880,7 +2982,7 @@
         "stop_id": "000731655202",
         "name": "Romaltvej/Mejerivej (Randers Kom)",
         "events": 14,
-        "nearby_events": 87,
+        "nearby_events": 174,
         "major": false
       },
       "geometry": {
@@ -2897,7 +2999,7 @@
         "stop_id": "000731656201",
         "name": "Edithsminde/Romaltvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 167,
+        "nearby_events": 247,
         "major": false
       },
       "geometry": {
@@ -2914,7 +3016,7 @@
         "stop_id": "000731656202",
         "name": "Edithsminde/Romaltvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 196,
+        "nearby_events": 247,
         "major": false
       },
       "geometry": {
@@ -2931,7 +3033,7 @@
         "stop_id": "000731656502",
         "name": "Romalt/endestation (Randers Kom)",
         "events": 29,
-        "nearby_events": 159,
+        "nearby_events": 225,
         "major": false
       },
       "geometry": {
@@ -2948,7 +3050,7 @@
         "stop_id": "000731657001",
         "name": "Paderup Gymnasium/Paderup Blvd.",
         "events": 18,
-        "nearby_events": 90,
+        "nearby_events": 324,
         "major": false
       },
       "geometry": {
@@ -2965,7 +3067,7 @@
         "stop_id": "000731657002",
         "name": "Paderup Gymnasium/Paderup Blvd.",
         "events": 18,
-        "nearby_events": 90,
+        "nearby_events": 234,
         "major": false
       },
       "geometry": {
@@ -2982,7 +3084,7 @@
         "stop_id": "000731657201",
         "name": "Dania/Minervavej (Randers Kom)",
         "events": 18,
-        "nearby_events": 144,
+        "nearby_events": 360,
         "major": false
       },
       "geometry": {
@@ -2999,7 +3101,7 @@
         "stop_id": "000731657202",
         "name": "Dania/Minervavej (Randers Kom)",
         "events": 18,
-        "nearby_events": 144,
+        "nearby_events": 360,
         "major": false
       },
       "geometry": {
@@ -3016,7 +3118,7 @@
         "stop_id": "000731657502",
         "name": "Randers Storcenter",
         "events": 54,
-        "nearby_events": 234,
+        "nearby_events": 449,
         "major": false
       },
       "geometry": {
@@ -3033,7 +3135,7 @@
         "stop_id": "000731657601",
         "name": "Paderup Boulevard/\u00c5rhusvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 197,
+        "nearby_events": 312,
         "major": false
       },
       "geometry": {
@@ -3050,7 +3152,7 @@
         "stop_id": "000731657602",
         "name": "Paderup Boulevard/\u00c5rhusvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 197,
+        "nearby_events": 330,
         "major": false
       },
       "geometry": {
@@ -3067,7 +3169,7 @@
         "stop_id": "000731658802",
         "name": "Clausholmvej/Paderup Boulevard (Randers Kom)",
         "events": 18,
-        "nearby_events": 36,
+        "nearby_events": 90,
         "major": false
       },
       "geometry": {
@@ -3084,7 +3186,7 @@
         "stop_id": "000731658803",
         "name": "Clausholmvej/Paderup Boulevard (Randers Kom)",
         "events": 18,
-        "nearby_events": 72,
+        "nearby_events": 108,
         "major": false
       },
       "geometry": {
@@ -3101,7 +3203,7 @@
         "stop_id": "000731659501",
         "name": "Nikkelvej/St\u00e5lvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 111,
+        "nearby_events": 302,
         "major": false
       },
       "geometry": {
@@ -3118,7 +3220,7 @@
         "stop_id": "000731659502",
         "name": "Nikkelvej/St\u00e5lvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 107,
+        "nearby_events": 302,
         "major": false
       },
       "geometry": {
@@ -3132,44 +3234,10 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "000731800301",
-        "name": "\u00d8lst/Karlsbergvej (Randers Kom)",
-        "events": 9,
-        "nearby_events": 36,
-        "major": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.083748,
-          56.38956
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "stop_id": "000731800302",
-        "name": "\u00d8lst/Karlsbergvej (Randers Kom)",
-        "events": 9,
-        "nearby_events": 36,
-        "major": false
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.083461,
-          56.389715
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "stop_id": "000731800601",
         "name": "Hadstenvej/Danish Crown Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 45,
+        "nearby_events": 99,
         "major": false
       },
       "geometry": {
@@ -3186,7 +3254,7 @@
         "stop_id": "000731800602",
         "name": "Hadstenvej/Danish Crown Vej (Randers Kom)",
         "events": 9,
-        "nearby_events": 45,
+        "nearby_events": 99,
         "major": false
       },
       "geometry": {
@@ -3203,7 +3271,7 @@
         "stop_id": "000731801101",
         "name": "Vestergade/Fredensgade (Randers Kom)",
         "events": 15,
-        "nearby_events": 351,
+        "nearby_events": 676,
         "major": false
       },
       "geometry": {
@@ -3220,7 +3288,7 @@
         "stop_id": "000731801102",
         "name": "Vestergade/Fredensgade (Randers Kom)",
         "events": 14,
-        "nearby_events": 365,
+        "nearby_events": 663,
         "major": false
       },
       "geometry": {
@@ -3237,8 +3305,8 @@
         "stop_id": "000731801201",
         "name": "Randers Realskole/Markedsgade",
         "events": 27,
-        "nearby_events": 378,
-        "major": false
+        "nearby_events": 1183,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -3254,8 +3322,8 @@
         "stop_id": "000731801202",
         "name": "Randers Realskole/Markedsgade",
         "events": 27,
-        "nearby_events": 378,
-        "major": false
+        "nearby_events": 1162,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -3271,7 +3339,7 @@
         "stop_id": "000731801401",
         "name": "Jyllandsgade/Sj\u00e6llandsgade (Randers Kom)",
         "events": 15,
-        "nearby_events": 317,
+        "nearby_events": 560,
         "major": false
       },
       "geometry": {
@@ -3288,7 +3356,7 @@
         "stop_id": "000731801402",
         "name": "Jyllandsgade/Sj\u00e6llandsgade (Randers Kom)",
         "events": 14,
-        "nearby_events": 327,
+        "nearby_events": 589,
         "major": false
       },
       "geometry": {
@@ -3305,7 +3373,7 @@
         "stop_id": "000731801601",
         "name": "Tradium/Mariagervej (Randers Kom)",
         "events": 27,
-        "nearby_events": 405,
+        "nearby_events": 762,
         "major": false
       },
       "geometry": {
@@ -3322,8 +3390,8 @@
         "stop_id": "000731801701",
         "name": "Solgaarden/Hobrovej",
         "events": 27,
-        "nearby_events": 497,
-        "major": true
+        "nearby_events": 831,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -3339,8 +3407,8 @@
         "stop_id": "000731801702",
         "name": "Solgaarden/Hobrovej",
         "events": 27,
-        "nearby_events": 496,
-        "major": true
+        "nearby_events": 831,
+        "major": false
       },
       "geometry": {
         "type": "Point",
@@ -3356,7 +3424,7 @@
         "stop_id": "000731801801",
         "name": "Forberedelsesskolen/Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 489,
+        "nearby_events": 794,
         "major": false
       },
       "geometry": {
@@ -3373,7 +3441,7 @@
         "stop_id": "000731801802",
         "name": "Forberedelsesskolen/Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 489,
+        "nearby_events": 794,
         "major": false
       },
       "geometry": {
@@ -3390,8 +3458,8 @@
         "stop_id": "000731801901",
         "name": "Markedsgade/Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 475,
-        "major": false
+        "nearby_events": 1108,
+        "major": true
       },
       "geometry": {
         "type": "Point",
@@ -3407,7 +3475,7 @@
         "stop_id": "000731801902",
         "name": "Markedsgade/Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 489,
+        "nearby_events": 780,
         "major": false
       },
       "geometry": {
@@ -3424,7 +3492,7 @@
         "stop_id": "000731802301",
         "name": "L\u00e6gevagten/Skovlyvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 376,
+        "nearby_events": 731,
         "major": false
       },
       "geometry": {
@@ -3441,7 +3509,7 @@
         "stop_id": "000731802302",
         "name": "L\u00e6gevagten/Skovlyvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 376,
+        "nearby_events": 731,
         "major": false
       },
       "geometry": {
@@ -3458,7 +3526,7 @@
         "stop_id": "000731802401",
         "name": "Regionshospitalet/Kirketerpvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 381,
+        "nearby_events": 627,
         "major": false
       },
       "geometry": {
@@ -3475,7 +3543,7 @@
         "stop_id": "000731802402",
         "name": "Regionshospitalet/Kirketerpvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 439,
+        "nearby_events": 654,
         "major": false
       },
       "geometry": {
@@ -3492,7 +3560,7 @@
         "stop_id": "000731802501",
         "name": "Stadfeldtsvej/P. Knudsens Vej (Randers Kom)",
         "events": 27,
-        "nearby_events": 459,
+        "nearby_events": 642,
         "major": false
       },
       "geometry": {
@@ -3509,7 +3577,7 @@
         "stop_id": "000731802502",
         "name": "Stadfeldtsvej/P. Knudsens Vej (Randers Kom)",
         "events": 27,
-        "nearby_events": 459,
+        "nearby_events": 669,
         "major": false
       },
       "geometry": {
@@ -3526,7 +3594,7 @@
         "stop_id": "000731802601",
         "name": "T\u00f8jhushaven/Udbyh\u00f8jvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 410,
+        "nearby_events": 727,
         "major": false
       },
       "geometry": {
@@ -3543,7 +3611,7 @@
         "stop_id": "000731802602",
         "name": "T\u00f8jhushaven/Udbyh\u00f8jvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 351,
+        "nearby_events": 754,
         "major": false
       },
       "geometry": {
@@ -3560,7 +3628,7 @@
         "stop_id": "000731803001",
         "name": "Teglvej/Dronningborg Boulevard (Randers Kom)",
         "events": 27,
-        "nearby_events": 189,
+        "nearby_events": 346,
         "major": false
       },
       "geometry": {
@@ -3577,7 +3645,7 @@
         "stop_id": "000731803002",
         "name": "Teglvej/Dronningborg Boulevard (Randers Kom)",
         "events": 27,
-        "nearby_events": 189,
+        "nearby_events": 342,
         "major": false
       },
       "geometry": {
@@ -3594,7 +3662,7 @@
         "stop_id": "000731803501",
         "name": "Tv\u00e6rvej/\u00d8stre Boulevard (Randers Kom)",
         "events": 27,
-        "nearby_events": 261,
+        "nearby_events": 383,
         "major": false
       },
       "geometry": {
@@ -3611,7 +3679,7 @@
         "stop_id": "000731803602",
         "name": "Runddelsvej/Tj\u00e6rbyvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 261,
+        "nearby_events": 328,
         "major": false
       },
       "geometry": {
@@ -3628,7 +3696,7 @@
         "stop_id": "000731803701",
         "name": "Ulstrupvej/Tj\u00e6rbyvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 221,
+        "nearby_events": 391,
         "major": false
       },
       "geometry": {
@@ -3645,7 +3713,7 @@
         "stop_id": "000731804201",
         "name": "Platanvej Midt (Randers Kom)",
         "events": 9,
-        "nearby_events": 170,
+        "nearby_events": 313,
         "major": false
       },
       "geometry": {
@@ -3662,7 +3730,7 @@
         "stop_id": "000731804202",
         "name": "Platanvej Midt (Randers Kom)",
         "events": 9,
-        "nearby_events": 117,
+        "nearby_events": 286,
         "major": false
       },
       "geometry": {
@@ -3679,7 +3747,7 @@
         "stop_id": "000731804401",
         "name": "Brigadevej/Glarbjergvej (Randers Kom)",
         "events": 26,
-        "nearby_events": 246,
+        "nearby_events": 403,
         "major": false
       },
       "geometry": {
@@ -3696,7 +3764,7 @@
         "stop_id": "000731804402",
         "name": "Brigadevej/Glarbjergvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 246,
+        "nearby_events": 435,
         "major": false
       },
       "geometry": {
@@ -3713,7 +3781,7 @@
         "stop_id": "000731804502",
         "name": "Husarvej/Garnisionsvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 177,
+        "nearby_events": 313,
         "major": false
       },
       "geometry": {
@@ -3730,7 +3798,7 @@
         "stop_id": "000731804603",
         "name": "Gl. Jennumvej/Ringboulevarden (Randers)",
         "events": 18,
-        "nearby_events": 247,
+        "nearby_events": 391,
         "major": false
       },
       "geometry": {
@@ -3747,7 +3815,7 @@
         "stop_id": "000731804702",
         "name": "Garnisionsvej/Kompagnivej (Randers Kom)",
         "events": 18,
-        "nearby_events": 120,
+        "nearby_events": 256,
         "major": false
       },
       "geometry": {
@@ -3764,7 +3832,7 @@
         "stop_id": "000731805301",
         "name": "Mj\u00f8lnersvej/Nyvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 307,
+        "nearby_events": 522,
         "major": false
       },
       "geometry": {
@@ -3781,7 +3849,7 @@
         "stop_id": "000731805302",
         "name": "Mj\u00f8lnersvej/Nyvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 307,
+        "nearby_events": 518,
         "major": false
       },
       "geometry": {
@@ -3798,7 +3866,7 @@
         "stop_id": "000731805401",
         "name": "Energivej/Nyvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 294,
+        "nearby_events": 664,
         "major": false
       },
       "geometry": {
@@ -3815,7 +3883,7 @@
         "stop_id": "000731805402",
         "name": "Energivej/Nyvangsvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 380,
+        "nearby_events": 664,
         "major": false
       },
       "geometry": {
@@ -3832,7 +3900,7 @@
         "stop_id": "000731805501",
         "name": "Mimersvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 270,
+        "nearby_events": 583,
         "major": false
       },
       "geometry": {
@@ -3849,7 +3917,7 @@
         "stop_id": "000731805502",
         "name": "Mimersvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 270,
+        "nearby_events": 606,
         "major": false
       },
       "geometry": {
@@ -3866,7 +3934,7 @@
         "stop_id": "000731805802",
         "name": "Gl. Hobrovej/Lucernevej (Randers Kom)",
         "events": 27,
-        "nearby_events": 216,
+        "nearby_events": 367,
         "major": false
       },
       "geometry": {
@@ -3883,7 +3951,7 @@
         "stop_id": "000731806001",
         "name": "Skelvangvej/Nordskellet (Randers Kom)",
         "events": 27,
-        "nearby_events": 275,
+        "nearby_events": 368,
         "major": false
       },
       "geometry": {
@@ -3900,7 +3968,7 @@
         "stop_id": "000731806002",
         "name": "Skelvangvej/Nordskellet (Randers Kom)",
         "events": 27,
-        "nearby_events": 275,
+        "nearby_events": 368,
         "major": false
       },
       "geometry": {
@@ -3917,7 +3985,7 @@
         "stop_id": "000731806101",
         "name": "Skelvangen (Randers Kom)",
         "events": 27,
-        "nearby_events": 300,
+        "nearby_events": 457,
         "major": false
       },
       "geometry": {
@@ -3934,7 +4002,7 @@
         "stop_id": "000731806102",
         "name": "Skelvangen (Randers Kom)",
         "events": 27,
-        "nearby_events": 300,
+        "nearby_events": 457,
         "major": false
       },
       "geometry": {
@@ -3951,7 +4019,7 @@
         "stop_id": "000731806201",
         "name": "Humlehaven/Gl. Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 340,
+        "nearby_events": 429,
         "major": false
       },
       "geometry": {
@@ -3968,7 +4036,7 @@
         "stop_id": "000731806202",
         "name": "Humlehaven/Gl. Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 340,
+        "nearby_events": 429,
         "major": false
       },
       "geometry": {
@@ -3985,7 +4053,7 @@
         "stop_id": "000731806301",
         "name": "Vangdalen/Gl. Hobrovej (Randers Kom)",
         "events": 27,
-        "nearby_events": 216,
+        "nearby_events": 394,
         "major": false
       },
       "geometry": {
@@ -4002,7 +4070,7 @@
         "stop_id": "000731806801",
         "name": "G\u00f8rtlervej/Stien (Randers Kom)",
         "events": 15,
-        "nearby_events": 145,
+        "nearby_events": 260,
         "major": false
       },
       "geometry": {
@@ -4019,7 +4087,7 @@
         "stop_id": "000731806802",
         "name": "G\u00f8rtlervej/Stien (Randers Kom)",
         "events": 14,
-        "nearby_events": 153,
+        "nearby_events": 234,
         "major": false
       },
       "geometry": {
@@ -4036,7 +4104,7 @@
         "stop_id": "000731806901",
         "name": "G\u00f8rtlervej/G\u00f8rrilds All\u00e9 (Randers Kom)",
         "events": 15,
-        "nearby_events": 116,
+        "nearby_events": 255,
         "major": false
       },
       "geometry": {
@@ -4053,7 +4121,7 @@
         "stop_id": "000731806902",
         "name": "G\u00f8rtlervej/G\u00f8rrilds All\u00e9 (Randers Kom)",
         "events": 14,
-        "nearby_events": 116,
+        "nearby_events": 255,
         "major": false
       },
       "geometry": {
@@ -4070,7 +4138,7 @@
         "stop_id": "000731807101",
         "name": "Nordstjernen/Engh\u00f8j All\u00e9 (Randers Kom)",
         "events": 15,
-        "nearby_events": 190,
+        "nearby_events": 313,
         "major": false
       },
       "geometry": {
@@ -4087,7 +4155,7 @@
         "stop_id": "000731807102",
         "name": "Nordstjernen/Engh\u00f8j All\u00e9 (Randers Kom)",
         "events": 14,
-        "nearby_events": 190,
+        "nearby_events": 299,
         "major": false
       },
       "geometry": {
@@ -4104,7 +4172,7 @@
         "stop_id": "000731807201",
         "name": "Karlsvognen midt (Randers Kom)",
         "events": 15,
-        "nearby_events": 176,
+        "nearby_events": 219,
         "major": false
       },
       "geometry": {
@@ -4121,7 +4189,7 @@
         "stop_id": "000731807202",
         "name": "Karlsvognen midt (Randers Kom)",
         "events": 14,
-        "nearby_events": 176,
+        "nearby_events": 219,
         "major": false
       },
       "geometry": {
@@ -4138,7 +4206,7 @@
         "stop_id": "000731807301",
         "name": "Bromb\u00e6rvej/Egeg\u00e5rdsvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 127,
+        "nearby_events": 218,
         "major": false
       },
       "geometry": {
@@ -4155,7 +4223,7 @@
         "stop_id": "000731807401",
         "name": "Egeg\u00e5rdsvej/Hobrovej (Randers Kom)",
         "events": 14,
-        "nearby_events": 189,
+        "nearby_events": 247,
         "major": false
       },
       "geometry": {
@@ -4172,7 +4240,7 @@
         "stop_id": "000731807502",
         "name": "Kollektivhuset (Randers Kom)",
         "events": 12,
-        "nearby_events": 60,
+        "nearby_events": 190,
         "major": false
       },
       "geometry": {
@@ -4189,7 +4257,7 @@
         "stop_id": "000731807601",
         "name": "Kollektivhuset (Randers Kom)",
         "events": 12,
-        "nearby_events": 72,
+        "nearby_events": 198,
         "major": false
       },
       "geometry": {
@@ -4206,7 +4274,7 @@
         "stop_id": "000731809301",
         "name": "Rubindalen/Torupdalvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 144,
+        "nearby_events": 198,
         "major": false
       },
       "geometry": {
@@ -4223,7 +4291,7 @@
         "stop_id": "000731810001",
         "name": "Gr\u00f8nbakken/Engboulevarden (Randers Kom)",
         "events": 18,
-        "nearby_events": 225,
+        "nearby_events": 551,
         "major": false
       },
       "geometry": {
@@ -4240,7 +4308,7 @@
         "stop_id": "000731810002",
         "name": "Gr\u00f8nbakken/Engboulevarden (Randers Kom)",
         "events": 18,
-        "nearby_events": 225,
+        "nearby_events": 551,
         "major": false
       },
       "geometry": {
@@ -4257,7 +4325,7 @@
         "stop_id": "000731810501",
         "name": "Olufsvej/R. Houg\u00e5rds Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 254,
+        "nearby_events": 481,
         "major": false
       },
       "geometry": {
@@ -4274,7 +4342,7 @@
         "stop_id": "000731810502",
         "name": "Olufsvej/R. Houg\u00e5rds Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 254,
+        "nearby_events": 535,
         "major": false
       },
       "geometry": {
@@ -4291,7 +4359,7 @@
         "stop_id": "000731810801",
         "name": "Knud Lavads Vej/Asser Rigs Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 239,
+        "nearby_events": 586,
         "major": false
       },
       "geometry": {
@@ -4308,7 +4376,7 @@
         "stop_id": "000731810802",
         "name": "Knud Lavads Vej/Asser Rigs Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 275,
+        "nearby_events": 575,
         "major": false
       },
       "geometry": {
@@ -4325,7 +4393,7 @@
         "stop_id": "000731810901",
         "name": "Absalonsvej/Asser Rigs Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 274,
+        "nearby_events": 420,
         "major": false
       },
       "geometry": {
@@ -4342,7 +4410,7 @@
         "stop_id": "000731810902",
         "name": "Absalonsvej/Asser Rigs Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 274,
+        "nearby_events": 420,
         "major": false
       },
       "geometry": {
@@ -4359,7 +4427,7 @@
         "stop_id": "000731811001",
         "name": "Clausholmvej/Holger Danskes Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 228,
+        "nearby_events": 336,
         "major": false
       },
       "geometry": {
@@ -4376,7 +4444,7 @@
         "stop_id": "000731811002",
         "name": "Clausholmvej/Holger Danskes Vej (Randers Kom)",
         "events": 18,
-        "nearby_events": 228,
+        "nearby_events": 336,
         "major": false
       },
       "geometry": {
@@ -4393,7 +4461,7 @@
         "stop_id": "000731812101",
         "name": "Vorup Boulevard/B\u00f8sbrovej (Randers Kom)",
         "events": 9,
-        "nearby_events": 51,
+        "nearby_events": 180,
         "major": false
       },
       "geometry": {
@@ -4410,7 +4478,7 @@
         "stop_id": "000731812701",
         "name": "S\u00f8ndermarksvej/B\u00f8sbrovej (Randers Kom)",
         "events": 9,
-        "nearby_events": 76,
+        "nearby_events": 142,
         "major": false
       },
       "geometry": {
@@ -4427,7 +4495,7 @@
         "stop_id": "000731812702",
         "name": "S\u00f8ndermarksvej/B\u00f8sbrovej (Randers Kom)",
         "events": 9,
-        "nearby_events": 89,
+        "nearby_events": 142,
         "major": false
       },
       "geometry": {
@@ -4444,7 +4512,7 @@
         "stop_id": "000731812801",
         "name": "Valdhornvej/S\u00f8ndermarksvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 103,
+        "nearby_events": 168,
         "major": false
       },
       "geometry": {
@@ -4461,7 +4529,7 @@
         "stop_id": "000731812802",
         "name": "Valdhornvej/S\u00f8ndermarksvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 103,
+        "nearby_events": 168,
         "major": false
       },
       "geometry": {
@@ -4478,7 +4546,7 @@
         "stop_id": "000731812901",
         "name": "Nyborgvej/B\u00f8sbrovej (Randers Kom)",
         "events": 9,
-        "nearby_events": 88,
+        "nearby_events": 123,
         "major": false
       },
       "geometry": {
@@ -4495,7 +4563,7 @@
         "stop_id": "000731813001",
         "name": "Pibervej/Orkestervej (Randers Kom)",
         "events": 9,
-        "nearby_events": 89,
+        "nearby_events": 141,
         "major": false
       },
       "geometry": {
@@ -4512,7 +4580,7 @@
         "stop_id": "000731813002",
         "name": "Pibervej/Orkestervej (Randers Kom)",
         "events": 9,
-        "nearby_events": 98,
+        "nearby_events": 150,
         "major": false
       },
       "geometry": {
@@ -4529,7 +4597,7 @@
         "stop_id": "000731814201",
         "name": "Romalt Aktivitetshal/Romaltvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 87,
+        "nearby_events": 145,
         "major": false
       },
       "geometry": {
@@ -4546,7 +4614,7 @@
         "stop_id": "000731814202",
         "name": "Romalt Aktivitetshal/Romaltvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 87,
+        "nearby_events": 145,
         "major": false
       },
       "geometry": {
@@ -4563,7 +4631,7 @@
         "stop_id": "000731814301",
         "name": "Trendevangen/Gl. Romaltvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 109,
+        "nearby_events": 204,
         "major": false
       },
       "geometry": {
@@ -4580,7 +4648,7 @@
         "stop_id": "000731814302",
         "name": "Trendevangen/Gl. Romaltvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 109,
+        "nearby_events": 204,
         "major": false
       },
       "geometry": {
@@ -4597,7 +4665,7 @@
         "stop_id": "000731814401",
         "name": "Takslunden/Romaltvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 87,
+        "nearby_events": 116,
         "major": false
       },
       "geometry": {
@@ -4614,7 +4682,7 @@
         "stop_id": "000731814402",
         "name": "Takslunden/Romaltvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 87,
+        "nearby_events": 116,
         "major": false
       },
       "geometry": {
@@ -4631,7 +4699,7 @@
         "stop_id": "000731814601",
         "name": "Fridasminde/Romaltvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 196,
+        "nearby_events": 247,
         "major": false
       },
       "geometry": {
@@ -4648,7 +4716,7 @@
         "stop_id": "000731814602",
         "name": "Fridasminde/Romaltvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 167,
+        "nearby_events": 247,
         "major": false
       },
       "geometry": {
@@ -4665,7 +4733,7 @@
         "stop_id": "000731814701",
         "name": "Hannesminde/Romaltvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 160,
+        "nearby_events": 254,
         "major": false
       },
       "geometry": {
@@ -4682,7 +4750,7 @@
         "stop_id": "000731814702",
         "name": "Hannesminde/Romaltvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 145,
+        "nearby_events": 243,
         "major": false
       },
       "geometry": {
@@ -4699,7 +4767,7 @@
         "stop_id": "000731814801",
         "name": "Mariesmindevej/Elk\u00e6rsvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 152,
+        "nearby_events": 196,
         "major": false
       },
       "geometry": {
@@ -4716,7 +4784,7 @@
         "stop_id": "000731814802",
         "name": "Mariesmindevej/Elk\u00e6rsvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 152,
+        "nearby_events": 196,
         "major": false
       },
       "geometry": {
@@ -4733,7 +4801,7 @@
         "stop_id": "000731814901",
         "name": "Jeppesminde/Elk\u00e6rsvej (Randers Kom)",
         "events": 15,
-        "nearby_events": 160,
+        "nearby_events": 196,
         "major": false
       },
       "geometry": {
@@ -4750,7 +4818,7 @@
         "stop_id": "000731814902",
         "name": "Jeppesminde/Elk\u00e6rsvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 156,
+        "nearby_events": 196,
         "major": false
       },
       "geometry": {
@@ -4767,7 +4835,7 @@
         "stop_id": "000731815001",
         "name": "Tradium/Minervavej (Randers Kom)",
         "events": 18,
-        "nearby_events": 270,
+        "nearby_events": 396,
         "major": false
       },
       "geometry": {
@@ -4784,7 +4852,7 @@
         "stop_id": "000731815002",
         "name": "Tradium/Minervavej (Randers Kom)",
         "events": 18,
-        "nearby_events": 270,
+        "nearby_events": 396,
         "major": false
       },
       "geometry": {
@@ -4801,7 +4869,7 @@
         "stop_id": "000731815201",
         "name": "Galateavej/Neptunvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 234,
+        "nearby_events": 395,
         "major": false
       },
       "geometry": {
@@ -4818,7 +4886,7 @@
         "stop_id": "000731815202",
         "name": "Galateavej/Neptunvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 252,
+        "nearby_events": 395,
         "major": false
       },
       "geometry": {
@@ -4835,7 +4903,7 @@
         "stop_id": "000731815301",
         "name": "Adonisvej/Tritonvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 198,
+        "nearby_events": 360,
         "major": false
       },
       "geometry": {
@@ -4852,7 +4920,7 @@
         "stop_id": "000731815302",
         "name": "Adonisvej/Tritonvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 216,
+        "nearby_events": 360,
         "major": false
       },
       "geometry": {
@@ -4869,7 +4937,7 @@
         "stop_id": "000731815501",
         "name": "Merkurvej/Tritonvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 189,
+        "nearby_events": 324,
         "major": false
       },
       "geometry": {
@@ -4886,7 +4954,7 @@
         "stop_id": "000731815502",
         "name": "Merkurvej/Tritonvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 189,
+        "nearby_events": 324,
         "major": false
       },
       "geometry": {
@@ -4903,7 +4971,7 @@
         "stop_id": "000731815701",
         "name": "Rundk\u00f8rsel/Merkurvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 269,
+        "nearby_events": 413,
         "major": false
       },
       "geometry": {
@@ -4920,7 +4988,7 @@
         "stop_id": "000731815702",
         "name": "Rundk\u00f8rsel/Merkurvej (Randers Kom)",
         "events": 27,
-        "nearby_events": 270,
+        "nearby_events": 413,
         "major": false
       },
       "geometry": {
@@ -4937,7 +5005,7 @@
         "stop_id": "000731815703",
         "name": "Rundk\u00f8rsel/Merkurvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 269,
+        "nearby_events": 431,
         "major": false
       },
       "geometry": {
@@ -4954,7 +5022,7 @@
         "stop_id": "000731815901",
         "name": "Tinvej/St\u00e5lvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 62,
+        "nearby_events": 212,
         "major": false
       },
       "geometry": {
@@ -4971,7 +5039,7 @@
         "stop_id": "000731815902",
         "name": "Tinvej/St\u00e5lvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 62,
+        "nearby_events": 212,
         "major": false
       },
       "geometry": {
@@ -4988,7 +5056,7 @@
         "stop_id": "000731816001",
         "name": "St\u00e5lvej/Hammelvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 80,
+        "nearby_events": 234,
         "major": false
       },
       "geometry": {
@@ -5005,7 +5073,7 @@
         "stop_id": "000731816002",
         "name": "St\u00e5lvej/Hammelvej (Randers Kom)",
         "events": 9,
-        "nearby_events": 71,
+        "nearby_events": 225,
         "major": false
       },
       "geometry": {
@@ -5022,7 +5090,7 @@
         "stop_id": "000731816201",
         "name": "C. la Cours Skole/Sj\u00e6llandsgade (Randers Kom)",
         "events": 15,
-        "nearby_events": 165,
+        "nearby_events": 432,
         "major": false
       },
       "geometry": {
@@ -5039,7 +5107,7 @@
         "stop_id": "000731816202",
         "name": "C. la Cours Skole/Sj\u00e6llandsgade (Randers Kom)",
         "events": 14,
-        "nearby_events": 246,
+        "nearby_events": 446,
         "major": false
       },
       "geometry": {
@@ -5056,7 +5124,7 @@
         "stop_id": "000731816501",
         "name": "Jadedalen/Torupdalvej (Randers Kom)",
         "events": 14,
-        "nearby_events": 90,
+        "nearby_events": 198,
         "major": false
       },
       "geometry": {
@@ -5073,7 +5141,7 @@
         "stop_id": "000731817001",
         "name": "Ledavej/Tritonvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 324,
+        "nearby_events": 351,
         "major": false
       },
       "geometry": {
@@ -5090,7 +5158,7 @@
         "stop_id": "000731817002",
         "name": "Ledavej/Tritonvej (Randers Kom)",
         "events": 18,
-        "nearby_events": 324,
+        "nearby_events": 342,
         "major": false
       },
       "geometry": {
@@ -5107,7 +5175,7 @@
         "stop_id": "000731817201",
         "name": "B\u00f8sbrovej/K\u00e6rgade (Randers Kom)",
         "events": 9,
-        "nearby_events": 224,
+        "nearby_events": 391,
         "major": false
       },
       "geometry": {
@@ -5124,7 +5192,7 @@
         "stop_id": "000731818001",
         "name": "Kaskelotten/Romalt Boulevard (Randers Kom)",
         "events": 15,
-        "nearby_events": 87,
+        "nearby_events": 145,
         "major": false
       },
       "geometry": {
@@ -5141,7 +5209,7 @@
         "stop_id": "000731818002",
         "name": "Kaskelotten/Romalt Boulevard (Randers Kom)",
         "events": 14,
-        "nearby_events": 87,
+        "nearby_events": 145,
         "major": false
       },
       "geometry": {

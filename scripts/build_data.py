@@ -43,7 +43,7 @@ SOGNE_URL = "https://api.dataforsyningen.dk/sogne?format=geojson"
 AFSTEMNINGSOMRAADER_URL = (
     "https://api.dataforsyningen.dk/afstemningsomraader?kommunekode=0730&format=geojson"
 )
-NEARBY_RADIUS_METERS = 500
+NEARBY_RADIUS_METERS = 750
 REQUIRED_HOURS = tuple(range(9, 18))
 
 
@@ -313,7 +313,7 @@ def build_transit_dataset(
         "eligible_stop_count": len(stop_features),
         "included_route_count": len(route_features),
         "play_window": "09:00-18:00 normal lordag",
-        "eligibility_rule": f"Stop er gyldigt hvis stop inden for 500 meter tilsammen har mindst {MIN_TOTAL_EVENTS} bushaendelser i spilvinduet, og stoppet selv har mindst en direkte bushaendelse i hver time fra 09 til 17.",
+        "eligibility_rule": f"Stop er gyldigt hvis stop inden for {NEARBY_RADIUS_METERS} meter tilsammen har mindst {MIN_TOTAL_EVENTS} bushaendelser i spilvinduet, og stoppet selv har mindst en direkte bushaendelse i hver time fra 09 til 17.",
         "nearby_radius_meters": NEARBY_RADIUS_METERS,
     }
 
