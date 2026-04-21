@@ -1,0 +1,13 @@
+{
+  "center": {
+    "lon": 10.03639,
+    "lat": 56.4607
+  },
+  "boundary_status": "official-pre-reform",
+  "boundary_note": "Kortet bruger den brugerleverede pre-reform Randers kommunegraense.",
+  "eligible_stop_count": 421,
+  "included_route_count": 15,
+  "play_window": "09:00-18:00 normal lordag",
+  "eligibility_rule": "Stop er eligible hvis stop inden for 500 meter tilsammen har mindst 18 bushaendelser i spilvinduet.",
+  "nearby_radius_meters": 500
+}

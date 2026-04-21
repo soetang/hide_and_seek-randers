@@ -1,0 +1,334 @@
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  color-scheme: light;
+  font-family: Inter, Arial, sans-serif;
+  color: #161616;
+  background: #f5f3ee;
+}
+
+body {
+  margin: 0;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: minmax(18rem, 24rem) 1fr;
+  min-height: 100vh;
+}
+
+.panel {
+  padding: 1rem;
+  background: #f9f7f2;
+  border-right: 1px solid #d5cfbf;
+  overflow-y: auto;
+}
+
+.panel h1,
+.panel h2 {
+  margin: 0 0 0.75rem;
+}
+
+.note {
+  padding: 0.75rem;
+  background: #eef4ff;
+  border: 1px solid #95a6c8;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.search-form,
+.result,
+.legend {
+  margin-top: 1rem;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-row,
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+input,
+button,
+a {
+  font: inherit;
+}
+
+input {
+  flex: 1;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid #cfd5e2;
+  border-radius: 0.85rem;
+  background: white;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+
+button,
+.actions a,
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.78rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  cursor: pointer;
+}
+
+.primary-button {
+  border: 1px solid #173a67;
+  background: linear-gradient(180deg, #2c5ea8 0%, #1d4276 100%);
+  color: white;
+  box-shadow: 0 10px 20px rgba(29, 66, 118, 0.2);
+}
+
+.secondary-button {
+  border: 1px solid #cdd7eb;
+  background: rgba(255, 255, 255, 0.95);
+  color: #173a67;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+button:hover,
+.actions a:hover,
+.primary-button:hover,
+.secondary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.suggestion-list {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0.35rem;
+  border: 1px solid #d5ddea;
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+  max-height: 14rem;
+  overflow-y: auto;
+}
+
+.suggestion-list[hidden] {
+  display: none;
+}
+
+.suggestion-item {
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.65rem;
+  cursor: pointer;
+}
+
+.suggestion-item:hover,
+.suggestion-item.is-active {
+  background: #edf4ff;
+}
+
+.area-label {
+  background: rgba(255, 255, 255, 0.72);
+  border: 0;
+  box-shadow: none;
+  color: #344054;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 5px;
+}
+
+.sogn-label {
+  color: #5b4a85;
+}
+
+.afstemning-label {
+  color: #165866;
+}
+
+#map,
+#print-map {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.legend ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.legend li,
+.print-legend span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.swatch {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: inline-block;
+  border-radius: 999px;
+}
+
+.swatch.boundary {
+  background: #c0392b;
+}
+
+.swatch.route {
+  background: #2155cc;
+}
+
+.swatch.stop {
+  background: #131313;
+}
+
+dl {
+  margin: 0;
+}
+
+dl div {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.print-page {
+  background: white;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#print-map {
+  min-height: 0;
+  height: 100vh;
+}
+
+.major-stop-label {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #cfcfcf;
+  color: #111;
+  box-shadow: none;
+  font-size: 11px;
+  padding: 2px 4px;
+}
+
+.print-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 500;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.8rem;
+  backdrop-filter: blur(2px);
+  max-width: 18rem;
+}
+
+.print-overlay h1 {
+  margin: 0 0 0.45rem;
+  font-size: 1.35rem;
+}
+
+.print-overlay .print-legend span {
+  margin-top: 0.2rem;
+  font-size: 0.92rem;
+}
+
+.route-legend-block {
+  margin-top: 0.45rem;
+}
+
+.route-legend-block h2 {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+}
+
+.route-legend-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 0.65rem;
+  row-gap: 0.18rem;
+}
+
+.route-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.76rem;
+  margin-top: 0;
+  break-inside: avoid;
+}
+
+.route-line-swatch {
+  width: 0.85rem;
+  height: 0.24rem;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.route-legend-text {
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    border-right: 0;
+    border-bottom: 1px solid #d5cfbf;
+  }
+
+  .actions {
+    gap: 0.45rem;
+  }
+
+  #map {
+    min-height: 70vh;
+  }
+}
+
+@media print {
+  @page {
+    size: A3 landscape;
+    margin: 0;
+  }
+
+  .print-page {
+    height: auto;
+    overflow: visible;
+  }
+
+  #print-map {
+    height: 100vh;
+  }
+
+  .leaflet-control-container,
+  .leaflet-control-attribution {
+    display: none !important;
+  }
+
+  .print-overlay {
+    top: 0.5cm;
+    left: 0.5cm;
+    padding: 0.4cm 0.48cm;
+    max-width: 8.4cm;
+  }
+}

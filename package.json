@@ -1,0 +1,27 @@
+{
+  "name": "hide_and_seek",
+  "version": "1.0.0",
+  "description": "Randers hide and seek helper tools",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite --config web/vite.config.js",
+    "build": "vite build --config web/vite.config.js",
+    "preview": "vite preview --config web/vite.config.js",
+    "test": "playwright test",
+    "test:e2e": "playwright test",
+    "capture": "node scripts/capture_outputs.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "vite": "^5.4.19"
+  }
+}

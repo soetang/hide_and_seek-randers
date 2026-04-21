@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randers printkort</title>
+    <script type="module" src="/src/print.js"></script>
+  </head>
+  <body class="print-page">
+    <div id="print-map"></div>
+    <div class="print-overlay">
+      <h1>Randers hide and seek</h1>
+      <div class="print-legend">
+        <span><span class="swatch boundary"></span>Spillegrænse</span>
+        <span><span class="swatch route"></span>Busrute</span>
+        <span><span class="swatch stop"></span>Eligible stop</span>
+      </div>
+      <div class="route-legend-block">
+        <h2>Busruter</h2>
+        <ul id="route-legend-list" class="route-legend-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+import L from 'leaflet'
+
+const ROUTE_PALETTE = ['#2155cc', '#cc5a00', '#00875a', '#7a3cff', '#c0392b', '#0089a7', '#a65e2e', '#d81b60', '#2e7d32', '#6d4c41']
+
+export function routeColor(label) {
+  const text = String(label || '')
+  let hash = 0
+  for (let index = 0; index < text.length; index += 1) {
+    hash = ((hash << 5) - hash + text.charCodeAt(index)) >>> 0
+  }
+  return ROUTE_PALETTE[hash % ROUTE_PALETTE.length]
+}
+
+export async function loadJson(path) {
+  const response = await fetch(path)
+  if (!response.ok) throw new Error(`Kunne ikke hente ${path}`)
+  return response.json()
+}
+
+export async function loadBaseData() {
+  const [boundary, routes, stops, sogne, afstemningsomraader, metadata] = await Promise.all([
+    loadJson('/data/boundary.geojson'),
+    loadJson('/data/routes.geojson'),
+    loadJson('/data/eligible-stops.geojson'),
+    loadJson('/data/sogne.geojson'),
+    loadJson('/data/afstemningsomraader.geojson'),
+    loadJson('/data/metadata.json'),
+  ])
+  return { boundary, routes, stops, sogne, afstemningsomraader, metadata }
+}
+
+export function createBaseMap(elementId, options = {}) {
+  const map = L.map(elementId, { zoomControl: options.zoomControl ?? true })
+  const isDefaultOsm = !options.tileUrl
+  L.tileLayer(options.tileUrl || 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: options.attribution || '&copy; OpenStreetMap-bidragsydere',
+    maxZoom: options.maxZoom || 19,
+    subdomains: options.subdomains || (isDefaultOsm ? 'abc' : undefined),
+  }).addTo(map)
+  return map
+}
+
+export function addBoundary(map, geojson) {
+  return L.geoJSON(geojson, {
+    style: {
+      color: '#c0392b',
+      weight: 3,
+      dashArray: '10 6',
+      fillOpacity: 0.03,
+    },
+  }).addTo(map)
+}
+
+export function addRoutes(map, geojson) {
+  return L.geoJSON(geojson, {
+    style: (feature) => ({ color: routeColor(feature.properties.label), weight: 3, opacity: 0.82 }),
+    onEachFeature: (feature, layer) => {
+      layer.bindPopup(`<strong>Rute ${feature.properties.label}</strong><br>${feature.properties.name}`)
+      layer.bindTooltip(`Rute ${feature.properties.label}`, {
+        sticky: true,
+        direction: 'top',
+      })
+    },
+  }).addTo(map)
+}
+
+export function addStops(map, geojson, options = {}) {
+  return L.geoJSON(geojson, {
+    pointToLayer: (feature, latlng) => {
+      const radius = feature.properties.major ? 4.25 : 2.75
+      return L.circleMarker(latlng, {
+        radius,
+        color: '#111',
+        fillColor: '#111',
+        fillOpacity: 0.95,
+        weight: 1,
+      })
+    },
+    onEachFeature: (feature, layer) => {
+      layer.bindPopup(`<strong>${feature.properties.name}</strong><br>${feature.properties.events} direkte bushaendelser<br>${feature.properties.nearby_events} bushaendelser inden for 500 m`)
+      if (options.hoverLabels !== false) {
+        layer.bindTooltip(feature.properties.name, {
+          sticky: true,
+          direction: 'top',
+        })
+      }
+      if (options.labelMajors && feature.properties.major) {
+        layer.bindTooltip(feature.properties.name, {
+          permanent: true,
+          direction: 'right',
+          offset: [8, 0],
+          className: 'major-stop-label',
+        })
+      }
+    },
+  }).addTo(map)
+}
+
+export function addSogne(map, geojson) {
+  const layer = L.geoJSON(geojson, {
+    style: {
+      color: '#7b68a6',
+      weight: 1,
+      opacity: 0.65,
+      fillColor: '#a78bfa',
+      fillOpacity: 0.08,
+    },
+    onEachFeature: (feature, featureLayer) => {
+      const name = feature.properties.navn || feature.properties.name
+      if (name) {
+        featureLayer.bindTooltip(name, {
+          permanent: true,
+          direction: 'center',
+          className: 'area-label sogn-label',
+        })
+      }
+    },
+  })
+  layer.addTo(map)
+  return layer
+}
+
+export function addAfstemningsomraader(map, geojson) {
+  return L.geoJSON(geojson, {
+    style: {
+      color: '#1f7a8c',
+      weight: 1,
+      opacity: 0.7,
+      fillColor: '#67c6d3',
+      fillOpacity: 0.07,
+    },
+    onEachFeature: (feature, featureLayer) => {
+      const label = feature.properties.navn || `Område ${feature.properties.nummer}`
+      featureLayer.bindTooltip(label, {
+        permanent: true,
+        direction: 'center',
+        className: 'area-label afstemning-label',
+      })
+      featureLayer.bindPopup(`<strong>${label}</strong><br>Afstemningsområde ${feature.properties.nummer || '-'}`)
+    },
+  })
+}
+
+export function fitAll(map, layers) {
+  const bounds = L.featureGroup(layers).getBounds()
+  if (bounds.isValid()) map.fitBounds(bounds.pad(0.08))
+}
+
+export function formatAreaValue(value) {
+  return value || '-'
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randers hide and seek</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="panel">
+        <h1>Randers hide and seek</h1>
+        <p class="note" id="boundary-note"></p>
+
+        <form id="search-form" class="search-form">
+          <label for="address-input">Adresse</label>
+          <div class="search-row">
+            <input id="address-input" autocomplete="off" placeholder="Sognegade 1, Randers" />
+            <button class="primary-button" type="submit">Sogneslag op</button>
+          </div>
+          <ul id="address-suggestions" class="suggestion-list" hidden></ul>
+        </form>
+
+        <div class="actions">
+          <button class="secondary-button" id="gps-button" type="button">Brug min position</button>
+          <button class="secondary-button" id="toggle-sogne" type="button">Vis/skjul sogne</button>
+          <button class="secondary-button" id="toggle-afstemning" type="button">Vis/skjul afstemningsområder</button>
+          <a class="secondary-button" href="/print.html" target="_blank" rel="noreferrer">Printvisning</a>
+        </div>
+
+        <section class="result" id="result-box">
+          <h2>Resultat</h2>
+          <p id="result-status">Ingen position valgt endnu.</p>
+          <dl>
+            <div>
+              <dt>Sogn</dt>
+              <dd id="result-sogn">-</dd>
+            </div>
+            <div>
+              <dt>Postnummer</dt>
+              <dd id="result-postnummer">-</dd>
+            </div>
+            <div>
+              <dt>Afstemningsområde</dt>
+              <dd id="result-afstemning">-</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="legend">
+          <h2>Legend</h2>
+          <ul>
+            <li><span class="swatch boundary"></span>Spillegraense</li>
+            <li><span class="swatch route"></span>Inkluderede busruter</li>
+            <li><span class="swatch stop"></span>Eligible stop</li>
+          </ul>
+        </section>
+      </aside>
+      <main>
+        <div id="map"></div>
+      </main>
+    </div>
+  </body>
+</html>

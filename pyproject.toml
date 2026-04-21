@@ -1,0 +1,21 @@
+[project]
+name = "hide-and-seek"
+version = "0.1.0"
+authors = [
+    { name = "soetang", email = "benjamin@soetang.dk" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pyproj>=3.7.2",
+    "pytest>=8.4.2",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.5",
+    "shapely>=2.1.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

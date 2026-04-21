@@ -1,0 +1,17 @@
+import { defineConfig } from 'vite'
+import { resolve } from 'node:path'
+
+export default defineConfig({
+  root: resolve(process.cwd(), 'web'),
+  publicDir: resolve(process.cwd(), 'web/public'),
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(process.cwd(), 'web/index.html'),
+        print: resolve(process.cwd(), 'web/print.html'),
+      },
+    },
+    outDir: resolve(process.cwd(), 'dist'),
+    emptyOutDir: true,
+  },
+})
