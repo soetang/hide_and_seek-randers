@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "vite --config web/vite.config.js",
-    "build": "vite build --config web/vite.config.js",
+    "build:site": "vite build --config web/vite.config.js",
+    "build:pdf": "node scripts/build_print_pdf.mjs",
+    "build": "npm run build:site && npm run build:pdf",
     "preview": "vite preview --config web/vite.config.js",
     "test": "playwright test",
     "test:e2e": "playwright test",

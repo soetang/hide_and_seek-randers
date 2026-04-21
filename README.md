@@ -63,6 +63,16 @@ npm run build
 npm run preview
 ```
 
+`npm run build` now does two things:
+
+- builds the static site into `dist/`
+- generates an updated portrait `print-map.pdf`
+
+The PDF is written to:
+
+- `dist/print-map.pdf`
+- `web/public/print-map.pdf`
+
 ## Tests
 
 Python tests:
