@@ -13,7 +13,7 @@ import {
 } from './shared.js'
 
 const map = createBaseMap('map', {
-  tileUrl: 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
+  tileUrl: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
   attribution: '&copy; OpenStreetMap-bidragsydere &copy; CARTO',
   subdomains: 'abcd',
   maxZoom: 20,
@@ -303,21 +303,19 @@ async function init() {
     navigator.geolocation.getCurrentPosition(
       async (position) => {
         await runLookup(data.boundary, position.coords.latitude, position.coords.longitude)
-        if (isTouchDevice) setMobilePanelOpen(false)
       },
       () => updateResult({ status: 'GPS blev afvist eller fejlede.', sogn: '-', postnummer: '-', afstemningsomraade: '-' }),
       { enableHighAccuracy: true, timeout: 15000 },
     )
   })
 
-  if (isTouchDevice) {
-    map.on('click', (event) => {
-      const nearest = findNearestStopLayer(event.containerPoint, stopLayer)
-      if (!nearest || nearest.distance > 18) return
-      nearest.layer.openPopup(nearest.latlng)
-      nearest.layer.fire('click')
-    })
-  }
+  map.on('click', (event) => {
+    const nearest = findNearestStopLayer(event.containerPoint, stopLayer)
+    const snapDistance = isTouchDevice ? 18 : 10
+    if (!nearest || nearest.distance > snapDistance) return
+    nearest.layer.openPopup(nearest.latlng)
+    nearest.layer.fire('click')
+  })
 
   elements.input.addEventListener('input', (event) => {
     const value = event.target.value
@@ -374,7 +372,6 @@ async function init() {
       return
     }
     await runLookup(data.boundary, coordinate.lat, coordinate.lon)
-    if (isTouchDevice) setMobilePanelOpen(false)
   })
 
   document.body.dataset.appReady = 'true'
