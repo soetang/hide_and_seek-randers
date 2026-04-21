@@ -81,9 +81,19 @@ body.is-mobile-app {
   line-height: 1.4;
 }
 
-.site-link a {
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: #1d4276;
-  word-break: break-word;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.repo-link-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: 0 0 auto;
 }
 
 .search-form {
