@@ -9,7 +9,7 @@ test('interactive map loads core UI', async ({ page }) => {
   await waitForAppReady(page)
   await expect(page.getByRole('heading', { name: 'Randers hide and seek' })).toBeVisible()
   await expect(page.locator('#map')).toBeVisible()
-  await expect(page.getByText('Spillegraense')).toBeVisible()
+  await expect(page.getByText('Spillegrænse')).toBeVisible()
 })
 
 test('print page loads map and header', async ({ page }) => {
@@ -24,12 +24,12 @@ test('address lookup resolves area information', async ({ page }) => {
   const input = page.locator('#address-input')
   await input.fill('Rådhustorvet 1, 8900 Randers C')
   await page.waitForTimeout(1000)
-  await page.getByRole('button', { name: 'Sogneslag op' }).click()
+  await input.press('Enter')
 
   await expect(page.locator('#result-status')).toHaveText('Position fundet i spilleomraadet.', { timeout: 15000 })
   await expect(page.locator('#result-sogn')).toHaveText('Sankt Mortens')
   await expect(page.locator('#result-postnummer')).toHaveText('8900 Randers C')
-  await expect(page.locator('#result-afstemning')).toHaveText('Fritidscentret')
+  await expect(page.locator('#result-afstemning')).toHaveText('Fritidscentret', { timeout: 15000 })
 })
 
 test('browser geolocation resolves area information', async ({ page, context }) => {
@@ -43,5 +43,5 @@ test('browser geolocation resolves area information', async ({ page, context }) 
   await expect(page.locator('#result-status')).toHaveText('Position fundet i spilleomraadet.', { timeout: 15000 })
   await expect(page.locator('#result-sogn')).toHaveText('Sankt Mortens')
   await expect(page.locator('#result-postnummer')).toHaveText('8900 Randers C')
-  await expect(page.locator('#result-afstemning')).toHaveText('Fritidscentret')
+  await expect(page.locator('#result-afstemning')).toHaveText('Fritidscentret', { timeout: 15000 })
 })

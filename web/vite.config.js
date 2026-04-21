@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'node:path'
 
 export default defineConfig({
+  base: './',
   root: resolve(process.cwd(), 'web'),
   publicDir: resolve(process.cwd(), 'web/public'),
   build: {

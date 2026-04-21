@@ -54,6 +54,10 @@ body {
   flex-wrap: wrap;
 }
 
+.search-row {
+  flex-direction: column;
+}
+
 input,
 button,
 a {

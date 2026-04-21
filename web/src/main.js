@@ -24,6 +24,8 @@ let afstemningLayer
 let selectedMarker
 let activeSuggestionIndex = -1
 let currentSuggestions = []
+let suggestionRequestToken = 0
+let suggestionDebounceTimer
 
 const elements = {
   boundaryNote: document.querySelector('#boundary-note'),
@@ -144,32 +146,33 @@ async function runLookup(boundaryData, lat, lon) {
 function buildAutocompletePolygon(boundaryData) {
   const geometry = boundaryData.features[0]?.geometry
   if (!geometry) return null
-
-  const polygons = geometry.type === 'Polygon'
-    ? [geometry.coordinates]
-    : geometry.type === 'MultiPolygon'
-      ? geometry.coordinates
-      : []
-
-  if (!polygons.length) return null
-
-  const outerRing = [...polygons]
-    .map((polygon) => polygon[0])
-    .sort((a, b) => b.length - a.length)[0]
-
-  const sampledRing = outerRing
-    .filter((_, index) => index % 8 === 0)
-    .map((coordinate) => [coordinate[0], coordinate[1]])
-
-  if (!sampledRing.length) return null
-
-  const first = sampledRing[0]
-  const last = sampledRing[sampledRing.length - 1]
-  if (first[0] !== last[0] || first[1] !== last[1]) {
-    sampledRing.push(first)
+  const points = []
+  const pushCoords = (coords) => {
+    for (const entry of coords) {
+      if (typeof entry[0] === 'number' && typeof entry[1] === 'number') {
+        points.push(entry)
+      } else {
+        pushCoords(entry)
+      }
+    }
   }
+  pushCoords(geometry.coordinates)
+  if (!points.length) return null
 
-  return JSON.stringify([sampledRing])
+  const xs = points.map((point) => point[0])
+  const ys = points.map((point) => point[1])
+  const minX = Number(Math.min(...xs).toFixed(5))
+  const maxX = Number(Math.max(...xs).toFixed(5))
+  const minY = Number(Math.min(...ys).toFixed(5))
+  const maxY = Number(Math.max(...ys).toFixed(5))
+
+  return JSON.stringify([[
+    [minX, minY],
+    [maxX, minY],
+    [maxX, maxY],
+    [minX, maxY],
+    [minX, minY],
+  ]])
 }
 
 async function fetchAddressSuggestions(query, polygon) {
@@ -248,14 +251,20 @@ async function init() {
     )
   })
 
-  elements.input.addEventListener('input', async (event) => {
-    let suggestions = []
-    try {
-      suggestions = await fetchAddressSuggestions(event.target.value, autocompletePolygon)
-    } catch {
-      suggestions = []
-    }
-    renderSuggestions(suggestions)
+  elements.input.addEventListener('input', (event) => {
+    const value = event.target.value
+    window.clearTimeout(suggestionDebounceTimer)
+    suggestionDebounceTimer = window.setTimeout(async () => {
+      const token = ++suggestionRequestToken
+      let suggestions = []
+      try {
+        suggestions = await fetchAddressSuggestions(value, autocompletePolygon)
+      } catch {
+        suggestions = []
+      }
+      if (token !== suggestionRequestToken) return
+      renderSuggestions(suggestions)
+    }, 250)
   })
 
   elements.input.addEventListener('keydown', (event) => {

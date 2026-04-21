@@ -1,5 +1,11 @@
 import L from 'leaflet'
 
+function assetUrl(path) {
+  const normalizedBase = import.meta.env.BASE_URL || '/'
+  const normalizedPath = path.replace(/^\//, '')
+  return `${normalizedBase}${normalizedPath}`
+}
+
 const ROUTE_PALETTE = ['#2155cc', '#cc5a00', '#00875a', '#7a3cff', '#c0392b', '#0089a7', '#a65e2e', '#d81b60', '#2e7d32', '#6d4c41']
 
 export function routeColor(label) {
@@ -12,7 +18,7 @@ export function routeColor(label) {
 }
 
 export async function loadJson(path) {
-  const response = await fetch(path)
+  const response = await fetch(assetUrl(path))
   if (!response.ok) throw new Error(`Kunne ikke hente ${path}`)
   return response.json()
 }
