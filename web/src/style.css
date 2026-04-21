@@ -75,6 +75,17 @@ body.is-mobile-app {
   margin-top: 1rem;
 }
 
+.site-link {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.site-link a {
+  color: #1d4276;
+  word-break: break-word;
+}
+
 .search-form {
   position: relative;
 }
