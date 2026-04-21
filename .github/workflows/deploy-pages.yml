@@ -41,9 +41,6 @@ jobs:
       - name: Install Node dependencies
         run: npm ci
 
-      - name: Build derived data
-        run: uv run python scripts/build_data.py
-
       - name: Build site
         run: npm run build
 
